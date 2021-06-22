@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:05:05 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/21 18:05:43 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/22 15:16:24 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,8 +44,7 @@ function	check_sh00_ex01() {
 		msg_nothing_turned_in "ex01/testShell00"
 		return
 	fi
-	FILESIZE=$(wc -c src/shell00/ex01/testShell00 | sed -e 's/\ src\/shell00\/ex01\/testShell00//g')
-	if ls -l src/shell00/ex01 | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | grep -E "20[0-9]{2}" > /dev/null && [ $FILESIZE -eq 40 ] ; then
+	if   ls -l src/shell00/ex01 | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | grep -E "20[0-9]{2}" > /dev/null && [ $FILESIZE -eq 40 ]  ; then
 		printf "${uni_success}ex01/testShell00\t\t${diff_ok}${NOCOLOR}\n"
 		printf "\ndiff ok :D\n" >> DEEPTHOUGHT
 	else
