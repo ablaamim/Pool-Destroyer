@@ -44,6 +44,7 @@ function	check_sh00_ex01() {
 		msg_nothing_turned_in "ex01/testShell00"
 		return
 	fi
+	FILESIZE=$(wc -c src/shell00/ex01/testShell00 | sed -e 's/\ src\/shell00\/ex01\/testShell00//g')
 	if   ls -l src/shell00/ex01 | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | grep -E "20[0-9]{2}" > /dev/null && [ $FILESIZE -eq 40 ]  ; then
 		printf "${uni_success}ex01/testShell00\t\t${diff_ok}${NOCOLOR}\n"
 		printf "\ndiff ok :D\n" >> DEEPTHOUGHT
