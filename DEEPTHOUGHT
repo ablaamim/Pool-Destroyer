@@ -1,0 +1,112 @@
+$> hostname; uname -msr
+DESKTOP-BJDTBIA
+Linux 4.4.0-19041-Microsoft x86_64
+$> date
+Tue Jun 22 14:40:36 +01 2021
+$> gcc --version
+gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+$> clang --version
+clang version 10.0.0-4ubuntu1 
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+$> echo $USER_NAME
+alaamimi
+
+Ready for testing
+
+Testing shell00:
+
+= ex00 =
+==========================================
+
+diff ok :D
+
+= ex01 =
+==========================================
+$>Extracting archive...
+Done.
+total 12
+-r--r-xr-x 1 root root    40 Jun  1 23:42 testShell00
+-rwxr-xr-x 1 root root 10240 Jun 22 14:40 testShell00.tar
+diff ko :(
+
+= ex02 =
+==========================================
+$>Extracting archive...
+Done.
+
+test0
+total 0
+diff ko :(
+
+test1
+-rw-r--r-- 1 root root 4 Jun  1 21:46 src/shell00/ex02/test1
+diff ko :(
+
+test2
+total 0
+diff ko :(
+
+test3
+-r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test3
+diff ko :(
+
+test4
+-rw-r--r-- 1 root root 2 Jun  1 23:43 src/shell00/ex02/test4
+diff ko :(
+
+test5
+-r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test5
+diff ko :(
+
+test6
+lrwxrwxrwx 1 root root 5 Jun  1 22:20 src/shell00/ex02/test6 -> test0
+diff ko :(
+
+= ex03 =
+==========================================
+
+diff ko :(
+
+= ex04 =
+==========================================
+1c1
+< 4, 2, 1
+\ No newline at end of file
+---
+> 1, 2, 4
+\ No newline at end of file
+
+diff ko :(
+
+= ex05 =
+==========================================
+
+diff ok :D
+
+= ex06 =
+==========================================
+
+diff ok :D
+
+= ex07 =
+==========================================
+$>src/shell00/ex07/b is missing. Skipping...
+
+
+= ex08 =
+==========================================
+
+diff ok :D
+
+= ex09 =
+==========================================
+Files src/shell00/ex09/ft_magic and tests/shell00/ex09/ft_magic differ
+
+diff ko :(
+
+
+All shell00 tests are done.
+
+Happy to ROAST you!
