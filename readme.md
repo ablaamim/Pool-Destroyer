@@ -1,6 +1,6 @@
 ---
 
-# :bomb: POOL DESTROYER :bomb:
+## :bomb: POOL DESTROYER :bomb:
 
 ---
 
@@ -17,13 +17,15 @@
 
 ---
 
-# launch tests :
+## launch tests :
 
 ### :information_source: Run the following command :
 
 > ./grademe.sh
 
-# :video_game: Interface :
+---
+
+## :video_game: Interface :
 
 ---
 
