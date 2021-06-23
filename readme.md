@@ -1,10 +1,10 @@
 ---
 
-# POOL DESTROYER
+# :bomb: POOL DESTROYER :bomb:
 
 ---
 
-Your piscine folder should be structured like this :
+### Your piscine folder should be structured like this :
 
 ```
 |
@@ -19,11 +19,11 @@ Your piscine folder should be structured like this :
 
 # launch tests :
 
-### Run the following command :
+### :information_source: Run the following command :
 
-> /grademe.sh
+> ./grademe.sh
 
-# Interface :
+# :video_game: Interface :
 
 ---
 
