@@ -2,6 +2,8 @@
 
 ## :bomb: POOL DESTROYER :bomb:
 
+/***** THIS IS NOT THE FINAL VERSION ! STILL DEVELOPPING AND DEBUGGING IT! *****/
+
 ---
 
 </p>
