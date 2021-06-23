@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:59:06 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/23 15:44:28 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/23 17:16:32 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -303,8 +303,6 @@ function	check_c00_ex07() {
 function	check_c00_ex08() {
 	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
 	printf "= ex07 =\n==========================================\n" >> DEEPTHOUGHT
-	printf "${RED}This exercise is not supported yet.${NOCOLOR}\n"
-	printf "\nThis exercise is not supported yet.\n\n" >> DEEPTHOUGHT
 }
 
 function	c00() {

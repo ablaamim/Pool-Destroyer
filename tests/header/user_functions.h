@@ -6,7 +6,7 @@
 /*   By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 19:20:31 by alaamimi          #+#    #+#             */
-/*   Updated: 2021/06/21 19:20:35 by alaamimi         ###   ########.fr       */
+/*   Updated: 2021/06/23 17:03:08 by alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void			ft_is_negative(int n);
 void			ft_print_comb(void);
 void			ft_print_comb2(void);
 void			ft_putnbr(int nb);
+void			ft_print_combn(int n);
 
 // c01
 void			ft_ft(int *nbr);

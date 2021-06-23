@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:27:46 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/22 16:10:33 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/23 16:59:32 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ printf "${YELLOW}===============================================================
 	[1]  KILL shell00;
 	[2]  KILL shell01;
 
-	[00] KILL c00; [Print_combn not supported yet]
+	[00] KILL c00;
 	[01] KILL c01;
 	[02] KILL c02;
 	[03] KILL c03;

@@ -4,13 +4,37 @@
 
 ---
 
+</p>
+<p align="center">
+<img src="https://www.willtheterminatorcometrue.com/wp-content/uploads/2015/12/terminator-2-robot.gif" width="800">
+</p>
+
+---
+
+## :wrench: This checks the norm as well !
+
+### Norm installation :
+
+[install norminette](https://github.com/42Paris/norminette)
+
+---
+
 ### Your piscine folder should be structured like this :
 
 ```
 |
-|--Pool-DESTROYER
+|--Pool-Destroyer
 |
 |--piscine
+|  |--shell00
+|  |   |--ex00
+|  |   |--ex01
+|  |   |...
+|  |
+|  |--shell01
+|  |--c00
+|  |--c01
+|  |...
 |
 
 ```
