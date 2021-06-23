@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:59:06 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/21 18:59:09 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/23 15:44:28 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -293,7 +293,6 @@ function	check_c00_ex07() {
 			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
 		else
 			printf "${uni_fail}ex07/ft_putnbr.c\t\t${diff_ko}${NOCOLOR}\n"
-			printf "$USER_OUTPUT\n"
 			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
 		fi
 		((i++))
@@ -323,6 +322,6 @@ function	c00() {
 	check_c00_ex07
 	check_c00_ex08
 	rm -rf $current_dir/user_output/c00 $current_dir/src/c00
-	printf "${GREEN}\nAll c00 tests are done.\n\n${NOCOLOR}"
-	printf "\n\nAll c00 tests are done.\n\n" >> DEEPTHOUGHT
+	printf "${GREEN}\nDone killing the targest [c00].\n${NOCOLOR}"
+	printf "\nEvery act of creation is a first act of destruction.\n" >> DEEPTHOUGHT
 }

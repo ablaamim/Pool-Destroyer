@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-BJDTBIA
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Tue Jun 22 19:19:40 +01 2021
+Wed Jun 23 15:48:59 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,102 +11,130 @@ Target: x86_64-pc-linux-gnu
 Thread model: posix
 InstalledDir: /usr/bin
 $> echo $USER_NAME
-root
+alaamimi
 
 Ready for testing
 
-Testing shell00:
+Testing c00:
 
 = ex00 =
 ==========================================
+
+Norme: ./src/c00/ex00/ft_putchar.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex00/main.c ./src/c00/ex00/ft_putchar.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex00
 
 diff ok :D
 
 = ex01 =
 ==========================================
-$>Extracting archive...
-Done.
-total 12
--rw-r--r-- 1 root root    40 Jun 22 18:08 testShell00
--rw-r--r-- 1 root root 10240 Jun 22 19:19 testShell00.tar
-diff ko :(
+
+Norme: ./src/c00/ex01/ft_print_alphabet.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex01/main.c ./src/c00/ex01/ft_print_alphabet.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex01
+
+diff ok :D
 
 = ex02 =
 ==========================================
-$>Extracting archive...
-Done.
 
-test0
-total 0
-diff ko :(
+Norme: ./src/c00/ex02/ft_print_reverse_alphabet.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex02/main.c ./src/c00/ex02/ft_print_reverse_alphabet.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex02
 
-test1
--rw-r--r-- 1 root root 4 Jun  1 21:46 src/shell00/ex02/test1
-diff ko :(
-
-test2
-total 0
-diff ko :(
-
-test3
--r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test3
-diff ko :(
-
-test4
--rw-r--r-- 1 root root 2 Jun  1 23:43 src/shell00/ex02/test4
-diff ko :(
-
-test5
--r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test5
-diff ko :(
-
-test6
-lrwxrwxrwx 1 root root 5 Jun  1 22:20 src/shell00/ex02/test6 -> test0
-diff ko :(
+diff ok :D
 
 = ex03 =
 ==========================================
 
-diff ko :(
+Norme: ./src/c00/ex03/ft_print_numbers.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex03/main.c ./src/c00/ex03/ft_print_numbers.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex03
+
+diff ok :D
 
 = ex04 =
 ==========================================
-1c1
-< 4, 2, 1
-\ No newline at end of file
----
-> 1, 2, 4
-\ No newline at end of file
 
-diff ko :(
+Norme: ./src/c00/ex04/ft_is_negative.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex04/main.c ./src/c00/ex04/ft_is_negative.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex04
+> test 0 with n=42
+diff ok :D
+
+> test 1 with n=2147483646
+diff ok :D
+
+> test 2 with n=1337
+diff ok :D
+
+> test 3 with n=-42
+diff ok :D
+
+> test 4 with n=-2147483647
+diff ok :D
+
+> test 5 with n=-1337
+diff ok :D
+
+> test 6 with n=6473287
+diff ok :D
+
+> test 7 with n=-328
+diff ok :D
+
+> test 8 with n=612567
+diff ok :D
 
 = ex05 =
 ==========================================
+
+Norme: ./src/c00/ex05/ft_print_comb.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex05/main.c ./src/c00/ex05/ft_print_comb.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex05
 
 diff ok :D
 
 = ex06 =
 ==========================================
 
+Norme: ./src/c00/ex06/ft_print_comb2.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex06/main.c ./src/c00/ex06/ft_print_comb2.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex06
+
 diff ok :D
 
 = ex07 =
 ==========================================
-$>src/shell00/ex07/b is missing. Skipping...
 
-
-= ex08 =
-==========================================
-
+Norme: ./src/c00/ex07/ft_putnbr.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex07/main.c ./src/c00/ex07/ft_putnbr.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex07
+> test 0 with nb=42
 diff ok :D
 
-= ex09 =
+> test 1 with nb=2147483647
+diff ok :D
+
+> test 2 with nb=1337
+diff ok :D
+
+> test 3 with nb=-42
+diff ok :D
+
+> test 4 with nb=-2147483647
+diff ok :D
+
+> test 5 with nb=-1337
+diff ok :D
+
+> test 6 with nb=6473287
+diff ok :D
+
+> test 7 with nb=-328
+diff ok :D
+
+> test 8 with nb=612567
+diff ok :D
+
+= ex07 =
 ==========================================
-Files src/shell00/ex09/ft_magic and tests/shell00/ex09/ft_magic differ
 
-diff ko :(
+This exercise is not supported yet.
 
 
-All shell00 tests are done.
+Every act of creation is a first act of destruction.
 
 Its either your code survives or it gets wrecked.
