@@ -6,11 +6,14 @@
 
 Your piscine folder should be structured like this :
 
+```
 |
 |--Pool-DESTROYER
 |
 |--piscine
 |
+
+```
 
 ---
 
