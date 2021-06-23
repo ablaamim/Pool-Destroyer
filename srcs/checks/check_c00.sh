@@ -301,8 +301,14 @@ function	check_c00_ex07() {
 }
 
 function	check_c00_ex08() {
-	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
-	printf "= ex07 =\n==========================================\n" >> DEEPTHOUGHT
+	sr_out=$current_dir/user_output/c00/ex08
+	mkdir $usr_out
+	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
+	printf "= ex08 =\n==========================================\n" >> DEEPTHOUGHT
+	if ! file_exists "src/c00/ex08/ft_print_combn.c" ; then
+		msg_nothing_turned_in "ex08/ft_print_combn.c"
+		return
+	fi
 }
 
 function	c00() {

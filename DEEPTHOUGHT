@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-BJDTBIA
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Wed Jun 23 17:04:48 +01 2021
+Wed Jun 23 17:35:59 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -129,10 +129,9 @@ diff ok :D
 > test 8 with nb=612567
 diff ok :D
 
-= ex07 =
+= ex08 =
 ==========================================
-
-This exercise is not supported yet.
+$>src/c00/ex08/ft_print_combn.c is missing. Skipping...
 
 
 Every act of creation is a first act of destruction.

@@ -2,8 +2,6 @@
 
 ## :bomb: POOL DESTROYER :bomb:
 
-/***** THIS IS NOT THE FINAL VERSION ! STILL DEVELOPPING AND DEBUGGING IT! *****/
-
 ---
 
 </p>
@@ -13,11 +11,19 @@
 
 ---
 
-## :wrench: This program checks the norm as well !
+## :wrench: This program checks :
+
+. check norm
 
 ### Norm installation :
 
 [install norminette](https://github.com/42Paris/norminette)
+
+. Check if files exist
+
+. Check prototype
+
+. Check bash scripts problems and c problems as well
 
 ---
 
