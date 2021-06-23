@@ -11,7 +11,7 @@
 
 ---
 
-## :wrench: This checks the norm as well !
+## :wrench: This program checks the norm as well !
 
 ### Norm installation :
 
