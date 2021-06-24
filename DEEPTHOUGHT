@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-BJDTBIA
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Wed Jun 23 17:35:59 +01 2021
+Thu Jun 24 18:45:50 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -131,7 +131,11 @@ diff ok :D
 
 = ex08 =
 ==========================================
-$>src/c00/ex08/ft_print_combn.c is missing. Skipping...
+
+Norme: ./src/c00/ex08/ft_print_combn.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex08/main.c ./src/c00/ex08/ft_print_combn.c -o /home/vlad/test/Pool-Detroyer/user_output/c00/ex08
+
+diff ok :D
 
 
 Every act of creation is a first act of destruction.

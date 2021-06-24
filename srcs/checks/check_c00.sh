@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:59:06 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/23 17:16:32 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/24 16:37:53 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -301,20 +301,43 @@ function	check_c00_ex07() {
 }
 
 function	check_c00_ex08() {
-	sr_out=$current_dir/user_output/c00/ex08
+	usr_out=$current_dir/user_output/c00/ex08
 	mkdir $usr_out
-	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
+	printf " ${YELLOW}${UNDERLINE}ex08:\n${NOCOLOR}"
 	printf "= ex08 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/c00/ex08/ft_print_combn.c" ; then
-		msg_nothing_turned_in "ex08/ft_print_combn.c"
+		msg_nothing_turned_in "ex05/ft_print_comb.c"
 		return
 	fi
+	check_norme "src/c00/ex08/ft_print_combn.c"
+	check_prototype "void" "ft_print_combn" "src/c00/ex08/ft_print_combn.c"
+	if [ "$NORME" != "0" ] ; then
+		return
+	fi
+	compile_tests ./tests/c00/ex08/main.c ./src/c00/ex08/ft_print_combn.c 
+	if [ "$IS_COMPILED" != "0" ] ; then
+		printf "${uni_fail}ex08/ft_print_combn.c\t\t${diff_ko}${NOCOLOR}\n"
+		printf "\ndiff ko :(\n\n" >> DEEPTHOUGHT
+		return
+	fi
+	local RES="0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+	cd $usr_out
+	local USER_OUTPUT=$(./user.out)
+	if [ "$RES" != "$USER_OUTPUT" ]; then
+		printf "${uni_fail}ex08/ft_print_combn.c\t\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo $RES) <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "\ndiff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_success}ex08/ft_print_combn\t\t${diff_ok}${NOCOLOR}\n"
+		printf "\ndiff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
+	cd $current_dir
 }
 
 function	c00() {
 	mkdir src/c00 user_output/c00
 	print_current_part "c00"
-	cp -r $src_path/c00/ex* ./src/c00  # copying src files
+	cp -r $src_path/c00/ex* ./src/c00
 	
 	check_c00_ex00
 	check_c00_ex01

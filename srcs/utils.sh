@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:03:04 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/23 15:06:30 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/24 16:34:40 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,6 @@ function	compile_tests() {
 }
 
 function	cleanup() {
-	rm -rf user_output
 	rm -rf src
+	rm -rf user_output
 }

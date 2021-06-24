@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:24:43 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/23 17:05:33 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/24 16:38:13 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,9 +34,9 @@ source	srcs/checks/check_c04.sh
 source	srcs/checks/check_c05.sh
 source	srcs/checks/check_c06.sh
 
-#function	cleanup() {
-#	rm -rf src user_output
-#}
+function	cleanup() {
+	rm -rf src user_output
+}
 
 
 case $1 in
