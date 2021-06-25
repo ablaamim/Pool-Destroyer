@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:59:06 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/24 16:37:53 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/25 13:58:27 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -340,7 +340,7 @@ function	check_c00_ex08() {
 		local i=1
 		while [ $i -le 9 ]
 		do
-			printf "> test $i \n" >> $current_dir/DEEPTHOUGHT
+			printf ">>> test $i <<<\n" >> $current_dir/DEEPTHOUGHT
 			printf "${uni_success}>test $i\t\t${diff_ok}${NOCOLOR}\n"
 			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
 			((i++))

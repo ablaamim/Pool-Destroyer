@@ -78,7 +78,7 @@ function	check_sh00_ex02() {
 
 	# Check test0
 	printf "\ntest0\n" >> DEEPTHOUGHT
-	if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "drwx--xr-x2" | grep -E "20[0-9]{2}" | grep -e "test0" > /dev/null ; then
+	if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | grep -E "20[0-9]{2}" | grep -e "test0" > /dev/null ; then
 		printf "${uni_success}ex02/test0\t\t\t${diff_ok}${NOCOLOR}\n"
 		printf "diff ok :D\n" >> DEEPTHOUGHT
 	else

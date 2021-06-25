@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:27:46 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/23 16:59:32 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/06/25 14:02:34 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,7 @@ printf "${YELLOW}===============================================================
 		elif [ "$REPLY" == "06" ]; then
 			c06
 		else
-			printf "${RED}WHERE ARE YOU GOING ! GET YOUR SHIT TOGETHER: $REPLY\n${NOCOLOR}"
+			printf "${RED}WHERE ARE YOU GOING ! GET YOUR SHIT TOGETHER.\n${NOCOLOR}"
 	fi
 	printf "\n"
 }

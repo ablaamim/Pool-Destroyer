@@ -13,17 +13,17 @@
 
 ## :wrench: This program checks :
 
-. check norm
+* check norm
 
 ### Norm installation :
 
 [install norminette](https://github.com/42Paris/norminette)
 
-. Check if files exist
+* Check if files exist
 
-. Check prototype
+* Check prototype
 
-. Check bash scripts problems and c problems as well
+* Check bash scripts problems and c problems as well
 
 ---
 
