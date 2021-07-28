@@ -13,9 +13,7 @@
 
 ## :wrench: This program checks :
 
-* check norm
-
-### Norm installation :
+* check norm V3.0
 
 [install norminette](https://github.com/42Paris/norminette)
 

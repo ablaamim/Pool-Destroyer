@@ -1,19 +1,59 @@
 $> hostname; uname -msr
-DESKTOP-BJDTBIA
-Linux 4.4.0-19041-Microsoft x86_64
+vlad
+Linux 4.19.0-17-amd64 x86_64
 $> date
-Fri Jun 25 16:06:00 +01 2021
+Tue 27 Jul 2021 11:53:46 AM +01
 $> gcc --version
-gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+gcc (Debian 8.3.0-6) 8.3.0
 $> clang --version
-clang version 10.0.0-4ubuntu1 
-Target: x86_64-pc-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
 $> echo $USER_NAME
-alaamimi
+root
 
 Ready for testing
 
+Testing c00:
+
+= ex00 =
+==========================================
+$>src/c00/ex00/ft_putchar.c is missing. Skipping...
+
+= ex01 =
+==========================================
+
+Norme: ./src/c00/ex01/ft_print_alphabet.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex01/main.c ./src/c00/ex01/ft_print_alphabet.c -o /home/vlad/Pool-Detroyer/user_output/c00/ex01
+
+diff ok :D
+
+= ex02 =
+==========================================
+$>src/c00/ex02/ft_print_reverse_alphabet.c is missing. Skipping...
+
+= ex03 =
+==========================================
+$>src/c00/ex03/ft_print_numbers.c is missing. Skipping...
+
+= ex04 =
+==========================================
+$>src/c00/ex04/ft_is_negative.c is missing. Skipping...
+
+= ex05 =
+==========================================
+$>src/c00/ex05/ft_print_comb.c is missing. Skipping...
+
+= ex06 =
+==========================================
+$>src/c00/ex06/ft_print_comb2.c is missing. Skipping...
+
+= ex07 =
+==========================================
+$>src/c00/ex07/ft_putnbr.c is missing. Skipping...
+
+= ex08 =
+==========================================
+$>src/c00/ex08/ft_print_combn.c is missing. Skipping...
+
+
+Every act of creation is a first act of destruction.
 
 Its either your code survives or it gets wrecked.
