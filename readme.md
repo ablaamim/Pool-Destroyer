@@ -13,9 +13,7 @@
 
 ## :wrench: This program checks :
 
-* check norm V3.0
-
-[install norminette](https://github.com/42Paris/norminette)
+* check norm V3.0 [install norminette](https://github.com/42Paris/norminette)
 
 * Check if files exist
 
