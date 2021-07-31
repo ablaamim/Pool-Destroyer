@@ -1,13 +1,69 @@
 $> hostname; uname -msr
-vlad
-Linux 4.19.0-17-amd64 x86_64
+DESKTOP-J0LTABQ
+Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Fri 30 Jul 2021 05:04:37 PM +01
+Sat Jul 31 20:11:56 CEST 2021
 $> gcc --version
-gcc (Debian 8.3.0-6) 8.3.0
+gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
 $> echo $USER_NAME
 root
 
 Ready for testing
 
+Testing shell00:
+
+= ex00 =
+==========================================
+$>src/shell00/ex00/z is missing. Skipping...
+
+
+= ex01 =
+==========================================
+$>src/shell00/ex01/testShell00.tar is missing. Skipping...
+
+
+= ex02 =
+==========================================
+$>src/shell00/ex02/exo2.tar is missing. Skipping...
+
+
+= ex03 =
+==========================================
+$>src/shell00/ex03/klist.txt is missing. Skipping...
+
+
+= ex04 =
+==========================================
+$>src/shell00/ex04/midLS is missing. Skipping...
+
+
+= ex05 =
+==========================================
+$>src/shell00/ex05/git_commit.sh is missing. Skipping...
+
+
+= ex06 =
+==========================================
+$>src/shell00/ex06/git_ignore.sh is missing. Skipping...
+
+
+= ex07 =
+==========================================
+$>src/shell00/ex07/b is missing. Skipping...
+
+
+= ex08 =
+==========================================
+$>src/shell00/ex08/clean is missing. Skipping...
+
+
+= ex09 =
+==========================================
+$>src/shell00/ex09/ft_magic is missing. Skipping...
+
+
+
+All shell00 tests are done.
+
+Its either your code survives or it gets wrecked.
