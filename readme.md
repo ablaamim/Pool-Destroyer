@@ -42,7 +42,7 @@
 |
 ```
 
-> piscine folder should be places in the same folder as "Pool_destroyer" program.
+> piscine folder should be places in the same folder as "Pool-Destroyer" program.
 
 ---
 
@@ -51,8 +51,11 @@
 ### :information_source: Run the following command :
 
 ```
-> ./grademe.sh
+$>./grademe.sh
+
 ```
+
+> This program will evaluate you following 42 norm (Norm V3.0) and strict prototyping.
 
 ---
 
