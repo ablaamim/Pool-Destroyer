@@ -13,13 +13,13 @@
 
 ## :wrench: This program checks :
 
-* check norm V3.0 [install norminette](https://github.com/42Paris/norminette)
+:heavy_check_mark: check norm V3.0 [install norminette](https://github.com/42Paris/norminette)
 
-* Check if files exist
+:heavy_check_mark: Check if files exist
 
-* Check prototype
+:heavy_check_mark: Check prototype
 
-* Check bash scripts problems and c problems as well
+:heavy_check_mark: Check bash scripts problems and c problems as well
 
 ---
 
@@ -27,22 +27,32 @@
 
 ```
 |
+|
 |--Pool-Destroyer
 |
 |--piscine
-|  |--shell00
-|  |   |--ex00
-|  |   |--ex01
-|  |   |...
-|  |
-|  |--shell01
-|  |--c00
-|  |--c01
-|  |...
+|	|--shell00
+|	|	|--ex00
+|	|	|--ex01
+|	|	|...
+|	|
+|	|--shell01
+		|--ex00
+		|--ex01
+		|...
+|	|--c00
+|	|	|--ex00
+|	|	|--ex01
+|	|	|...
+|	|--c01
+|	|...
+|
 |
 ```
 
-> piscine folder should be places in the same folder as "Pool-Destroyer" program.
+```
+> piscine folder should be placed in the same folder as "Pool-Destroyer" program.
+```
 
 ---
 
@@ -54,9 +64,6 @@
 $>./grademe.sh
 
 ```
-
-> This program will evaluate you following 42 norm (Norm V3.0) and strict prototyping.
-
 ---
 
 ## :video_game: Interface :

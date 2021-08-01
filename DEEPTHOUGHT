@@ -2,12 +2,12 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Sun Aug  1 23:31:48 CEST 2021
+Sun Aug  1 23:49:48 CEST 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
 $> echo $USER_NAME
-root
+alaamimi
 
 Ready for testing
 
@@ -23,15 +23,15 @@ diff ok :D
 $>Extracting archive...
 Done.
 total 12
-drwxr-xr-x 1 root root   512 Aug  1 23:31 folder0
-drwxr-xr-x 1 root root   512 Aug  1 23:31 folder1
--rw-r--r-- 1 root root     0 Aug  1 23:31 gg
--rw-r--r-- 1 root root     0 Aug  1 23:31 haha
--rw-r--r-- 1 root root     0 Aug  1 23:31 mdr
-drwxr-xr-x 1 root root   512 Aug  1 23:31 test0
-lrwxrwxrwx 1 root root     5 Aug  1 23:31 test6 -> test0
+drwxr-xr-x 1 root root   512 Aug  1 23:50 folder0
+drwxr-xr-x 1 root root   512 Aug  1 23:50 folder1
+-rw-r--r-- 1 root root     0 Aug  1 23:50 gg
+-rw-r--r-- 1 root root     0 Aug  1 23:50 haha
+-rw-r--r-- 1 root root     0 Aug  1 23:50 mdr
+drwxr-xr-x 1 root root   512 Aug  1 23:50 test0
+lrwxrwxrwx 1 root root     5 Aug  1 23:50 test6 -> test0
 -r--r-xr-x 1 root root    40 Jun  1 23:42 testShell00
--rw-r--r-- 1 root root 10240 Aug  1 23:31 testShell00.tar
+-rw-r--r-- 1 root root 10240 Aug  1 23:50 testShell00.tar
 diff ko :(
 
 = ex02 =
