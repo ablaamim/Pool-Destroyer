@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:43:26 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 19:28:03 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 23:34:48 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,11 +25,12 @@ function	print_welcome()
 ============================== |________________| ===================================
 ===============================                  ====================================
 =====================================================================================
-			    ~D E S T R U C T I O N !~
+				~D E S T R U C T I O N !~
 =====================================================================================${RED}${BOLD}${UNDERLINE}${VERSION}${NOCOLOR}\n"
 }
 
-function	print_current_part() {
-	printf "${PURPLE}${BOLD}${UNDERLINE}You are under test!${1}:${NOCOLOR}\n\n"
-	printf "Testing ${1}:\n\n" >> DEEPTHOUGHT
+function	print_current_part()
+{
+	printf "${PURPLE}${BOLD}${UNDERLINE}TESTING PROJECT : ${1}:${NOCOLOR}\n\n"
+	printf "LOADING ${1}:\n\n" >> DEEPTHOUGHT
 }

@@ -2,12 +2,79 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Sun Aug  1 20:08:19 CEST 2021
+Sun Aug  1 23:31:48 CEST 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
 $> echo $USER_NAME
-alaamimi
+root
 
 Ready for testing
 
+LOADING shell00:
+
+= ex00 =
+==========================================
+
+diff ok :D
+
+= ex01 =
+==========================================
+$>Extracting archive...
+Done.
+total 12
+drwxr-xr-x 1 root root   512 Aug  1 23:31 folder0
+drwxr-xr-x 1 root root   512 Aug  1 23:31 folder1
+-rw-r--r-- 1 root root     0 Aug  1 23:31 gg
+-rw-r--r-- 1 root root     0 Aug  1 23:31 haha
+-rw-r--r-- 1 root root     0 Aug  1 23:31 mdr
+drwxr-xr-x 1 root root   512 Aug  1 23:31 test0
+lrwxrwxrwx 1 root root     5 Aug  1 23:31 test6 -> test0
+-r--r-xr-x 1 root root    40 Jun  1 23:42 testShell00
+-rw-r--r-- 1 root root 10240 Aug  1 23:31 testShell00.tar
+diff ko :(
+
+= ex02 =
+==========================================
+$>src/shell00/ex02/exo2.tar is missing. Skipping...
+
+
+= ex03 =
+==========================================
+$>src/shell00/ex03/klist.txt is missing. Skipping...
+
+
+= ex04 =
+==========================================
+$>src/shell00/ex04/midLS is missing. Skipping...
+
+
+= ex05 =
+==========================================
+$>src/shell00/ex05/git_commit.sh is missing. Skipping...
+
+
+= ex06 =
+==========================================
+$>src/shell00/ex06/git_ignore.sh is missing. Skipping...
+
+
+= ex07 =
+==========================================
+$>src/shell00/ex07/b is missing. Skipping...
+
+
+= ex08 =
+==========================================
+$>src/shell00/ex08/clean is missing. Skipping...
+
+
+= ex09 =
+==========================================
+$>src/shell00/ex09/ft_magic is missing. Skipping...
+
+
+
+All shell00 tests are done.
+
+Its either your code survives or it gets wrecked.

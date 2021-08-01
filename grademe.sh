@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:24:43 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/24 16:38:13 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 23:30:22 by root             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ case $1 in
 esac
 
 #rm -rf src user_output 
-printf "${GREEN}${BOLD}\nK I L L  N E X T  T A R G E T >>>\n${NOCOLOR}"
+printf "${GREEN}${BOLD}\n>>> K I L L  N E X T  T A R G E T >>>\n${NOCOLOR}"
 printf "\nIts either your code survives or it gets wrecked.\n" >> DEEPTHOUGHT
 cd $current_dir
 cleanup

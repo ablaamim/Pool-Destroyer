@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:03:04 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 20:23:35 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 23:34:24 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ function	compile_tests()
 	gcc -Wall -Werror -Wextra $MAIN $USR_SRC -o $usr_out/user.out 2>> DEEPTHOUGHT
 	if [ ! -e $usr_out/user.out ] ; then
 		printf "${uni_fail}${NOCOLOR}\n"
-		printf "This compilation failed, this is going nowhere. ${diff_ko}\n" >> DEEPTHOUGHT
+		printf "This compilation failed.${diff_ko}\n" >> DEEPTHOUGHT
 		IS_COMPILED=1
 	else
 		printf "${uni_success}${NOCOLOR}\n"
