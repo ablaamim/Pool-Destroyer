@@ -40,16 +40,19 @@
 |  |--c01
 |  |...
 |
-
 ```
+
+> piscine folder should be places in the same folder as "Pool_destroyer" program.
 
 ---
 
-## launch tests :
+## Launch tests :
 
 ### :information_source: Run the following command :
 
+```
 > ./grademe.sh
+```
 
 ---
 
@@ -59,7 +62,7 @@
 
 </p>
 <p align="center">
-<img src="https://github.com/alaamimi/Pool-Detroyer/blob/master/img/img.jpg" width="800">
+<img src="https://github.com/alaamimi/Pool-Detroyer/blob/master/img/pool_destroyer.JPG" width="800">
 </p>
 
 ---
