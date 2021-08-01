@@ -6,13 +6,14 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:00:52 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/21 18:43:36 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 19:54:44 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	clean_before_launch() {
+function	clean_before_launch()
+{
 	if [ -e src ] ; then
 		rm -rf src
 	fi
@@ -24,7 +25,8 @@ function	clean_before_launch() {
 	fi
 }
 
-function	ask_username() {
+function	ask_username()
+{
 	if [ "$USER_NAME" == "alaamimi" ] ; then
 		printf "Welcome, alaamimi!\n\n"
 		return
@@ -42,14 +44,16 @@ function	ask_username() {
 	printf "Welcome, $USER_NAME!\n\n"
 }
 
-function	init() {
+function	init()
+{
 	clean_before_launch
 	mkdir src user_output
 	print_welcome
 	deepthought_init
 }
 
-function	deepthought_init() {
+function	deepthought_init()
+{
 	printf "\$> hostname; uname -msr\n" > DEEPTHOUGHT
 	hostname >> DEEPTHOUGHT ; uname -msr >> DEEPTHOUGHT
 	printf "\$> date\n" >> DEEPTHOUGHT

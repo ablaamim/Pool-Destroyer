@@ -6,13 +6,14 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:03:04 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/24 16:34:40 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 19:54:00 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	compile_tests() {
+function	compile_tests()
+{
 	local MAIN=$1
 	local USR_SRC=$2
 	
@@ -22,7 +23,7 @@ function	compile_tests() {
 	gcc -Wall -Werror -Wextra $MAIN $USR_SRC -o $usr_out/user.out 2>> DEEPTHOUGHT
 	if [ ! -e $usr_out/user.out ] ; then
 		printf "${uni_fail}${NOCOLOR}\n"
-		printf "This compilation failed, and so do you. ${diff_ko}\n" >> DEEPTHOUGHT
+		printf "This compilation failed, this is going nowhere. ${diff_ko}\n" >> DEEPTHOUGHT
 		IS_COMPILED=1
 	else
 		printf "${uni_success}${NOCOLOR}\n"
@@ -30,7 +31,8 @@ function	compile_tests() {
 	fi
 }
 
-function	cleanup() {
+function	cleanup()
+{
 	rm -rf src
 	rm -rf user_output
 }

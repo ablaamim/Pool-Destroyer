@@ -6,13 +6,15 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:59:06 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/25 13:58:27 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 20:07:26 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	check_c00_ex00() {
+#ex00 checker
+function	check_c00_ex00()
+{
 	usr_out=$current_dir/user_output/c00/ex00
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
@@ -47,7 +49,8 @@ function	check_c00_ex00() {
 	cd $current_dir
 }
 
-function	check_c00_ex01() {
+function	check_c00_ex01()
+{
 	usr_out=$current_dir/user_output/c00/ex01
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex01:\n${NOCOLOR}"
@@ -81,7 +84,8 @@ function	check_c00_ex01() {
 	cd $current_dir
 }
 
-function	check_c00_ex02() {
+function	check_c00_ex02()
+{
 	usr_out=$current_dir/user_output/c00/ex02
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex02:\n${NOCOLOR}"
@@ -115,7 +119,8 @@ function	check_c00_ex02() {
 	cd $current_dir
 }
 
-function	check_c00_ex03() {
+function	check_c00_ex03()
+{
 	usr_out=$current_dir/user_output/c00/ex03
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex03:\n${NOCOLOR}"
@@ -149,7 +154,8 @@ function	check_c00_ex03() {
 	cd $current_dir
 }
 
-function	check_c00_ex04() {
+function	check_c00_ex04()
+{
 	usr_out=$current_dir/user_output/c00/ex04
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex04:\n${NOCOLOR}"
@@ -261,7 +267,8 @@ function	check_c00_ex06() {
 	cd $current_dir
 }
 
-function	check_c00_ex07() {
+function	check_c00_ex07()
+{
 	usr_out=$current_dir/user_output/c00/ex07
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
@@ -300,7 +307,8 @@ function	check_c00_ex07() {
 	cd $current_dir
 }
 
-function	check_c00_ex08() {
+function	check_c00_ex08()
+{
 	usr_out=$current_dir/user_output/c00/ex08
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex08:\n${NOCOLOR}"
@@ -349,11 +357,12 @@ function	check_c00_ex08() {
 	cd $current_dir
 }
 
-function	c00() {
+function	c00()
+{
 	mkdir src/c00 user_output/c00
 	print_current_part "c00"
 	cp -r $src_path/c00/ex* ./src/c00
-	
+
 	check_c00_ex00
 	check_c00_ex01
 	check_c00_ex02
