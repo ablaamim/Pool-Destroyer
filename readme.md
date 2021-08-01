@@ -37,9 +37,9 @@
 |	|	|...
 |	|
 |	|--shell01
-		|--ex00
-		|--ex01
-		|...
+|	|	|--ex00
+|	|	|--ex01
+|	|	|...
 |	|--c00
 |	|	|--ex00
 |	|	|--ex01
@@ -62,8 +62,12 @@
 
 ```
 $>./grademe.sh
-
 ```
+
+</p>
+<p align="center">
+<img src="" width="800">
+</p>
 ---
 
 ## :video_game: Interface :
