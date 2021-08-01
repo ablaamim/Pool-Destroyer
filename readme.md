@@ -70,9 +70,11 @@ $>./grademe.sh
 
 ---
 
+## This tester will not be nice with your code !
+
 </p>
 <p align="center">
-<img src="https://i1.wp.com/www.purplerockpodcast.com/wp-content/uploads/survivor-gamechangers-hali-ford-are-you-sure.gif?resize=269%2C269" width="500">
+<img src="https://i1.wp.com/www.purplerockpodcast.com/wp-content/uploads/survivor-gamechangers-hali-ford-are-you-sure.gif?resize=269%2C269" width="800">
 </p>
 
 ---
