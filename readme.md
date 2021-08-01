@@ -63,11 +63,6 @@
 ```
 $>./grademe.sh
 ```
-
-</p>
-<p align="center">
-<img src="" width="800">
-</p>
 ---
 
 ## :video_game: Interface :
