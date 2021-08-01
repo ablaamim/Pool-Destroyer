@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:03:04 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 19:54:00 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 20:23:35 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ function	compile_tests()
 	local MAIN=$1
 	local USR_SRC=$2
 	
-	# Compiling
+	# Compiling with flags
 	printf " ${BLUE}${BOLD}Compiling$USR_SRC ${NOCOLOR}"
 	printf "\$> gcc -Wall -Werror -Wextra $MAIN $USR_SRC -o $usr_out\n" >> DEEPTHOUGHT
 	gcc -Wall -Werror -Wextra $MAIN $USR_SRC -o $usr_out/user.out 2>> DEEPTHOUGHT

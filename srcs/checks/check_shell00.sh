@@ -6,13 +6,15 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:05:05 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/22 15:16:24 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 20:23:01 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	check_sh00_ex00() {
+#checker for shell00
+function	check_sh00_ex00()
+{
 	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
 	printf "= ex00 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex00/z" ; then
@@ -30,7 +32,8 @@ function	check_sh00_ex00() {
 	fi
 }
 
-function	check_sh00_ex01() {
+function	check_sh00_ex01()
+{
 	printf " ${YELLOW}${UNDERLINE}ex01:\n${NOCOLOR}"
 	printf "\n= ex01 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex01/testShell00.tar" ; then
@@ -55,7 +58,8 @@ function	check_sh00_ex01() {
 	fi
 }
 
-function	check_sh00_ex02() {
+function	check_sh00_ex02()
+{
 	printf " ${YELLOW}${UNDERLINE}ex02:\n${NOCOLOR}"
 	printf "\n= ex02 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex02/exo2.tar" ; then
@@ -158,8 +162,8 @@ function	check_sh00_ex02() {
 	fi
 }
 
-function	check_sh00_ex03() {
-	
+function	check_sh00_ex03()
+{
 	printf " ${YELLOW}${UNDERLINE}ex03:\n${NOCOLOR}"
 	printf "\n= ex03 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex03/klist.txt" ; then
@@ -189,7 +193,8 @@ if [ "$DIFF_LINE_ONE" != "" ] && [ "$DIFF_LINE_TWO" != "" ] && [ "$DIFF_LINE_THR
 	fi	
 }
 
-function	check_sh00_ex04() {
+function	check_sh00_ex04()
+{
 	mkdir $usr_out/ex04
 	printf " ${YELLOW}${UNDERLINE}ex04:\n${NOCOLOR}"
 	printf "\n= ex04 =\n==========================================\n" >> DEEPTHOUGHT
@@ -213,7 +218,8 @@ function	check_sh00_ex04() {
 	fi
 }
 
-function	check_sh00_ex05() {
+function	check_sh00_ex05()
+{
 	printf " ${YELLOW}${UNDERLINE}ex05:\n${NOCOLOR}"
 	printf "\n= ex05 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex05/git_commit.sh" ; then
@@ -234,7 +240,8 @@ function	check_sh00_ex05() {
 	cd $current_dir
 }
 
-function	check_sh00_ex06() {
+function	check_sh00_ex06()
+{
 	printf " ${YELLOW}${UNDERLINE}ex06:\n${NOCOLOR}"
 	printf "\n= ex06 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex06/git_ignore.sh" ; then
@@ -256,7 +263,8 @@ function	check_sh00_ex06() {
 
 }
 
-function	check_sh00_ex07() {
+function	check_sh00_ex07()
+{
 	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
 	printf "\n= ex07 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex07/b" ; then
@@ -274,7 +282,8 @@ function	check_sh00_ex07() {
 	fi
 }
 
-function	check_sh00_ex08() {
+function	check_sh00_ex08()
+{
 	printf " ${YELLOW}${UNDERLINE}ex08:\n${NOCOLOR}"
 	printf "\n= ex08 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex08/clean" ; then
@@ -298,7 +307,8 @@ function	check_sh00_ex08() {
 	rm -rf tests/shell00/ex08
 }
 
-function	check_sh00_ex09() {
+function	check_sh00_ex09()
+{
 	printf " ${YELLOW}${UNDERLINE}ex09:\n${NOCOLOR}"
 	printf "\n= ex09 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell00/ex09/ft_magic" ; then
@@ -318,12 +328,13 @@ function	check_sh00_ex09() {
 	fi
 }
 
-function	shell00() {
+function	shell00()
+{
 	ask_username
 	mkdir src/shell00 user_output/shell00
 	print_current_part "shell00"
 	cp -r $src_path/shell00/ex* ./src/shell00  # copying src files
-	
+
 	check_sh00_ex00
 	check_sh00_ex01
 	check_sh00_ex02
