@@ -6,18 +6,19 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:27:46 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 19:26:15 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/01 20:27:03 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	choices() {
+function	choices()
+{
 printf "${YELLOW}=====================================================================================
 
 	CHOOSE WHAT YOU WOULD LIKE TO DESTROY :
 
-	SELECT [0]  Ultimate KILL;
+	SELECT [0][SELECT ALL]  Ultimate KILL;
 
 	SELECT [1]  KILL shell00;
 	SELECT [2]  KILL shell01;
@@ -39,7 +40,7 @@ printf "${YELLOW}===============================================================
 	[12] KILL c12;
 	[13] KILL c13;
 
-========================================================================================
+===============================================================================================
 
 \n${NOCOLOR}Select your kill (-all == 0): "
 	read
@@ -64,12 +65,13 @@ printf "${YELLOW}===============================================================
 		elif [ "$REPLY" == "06" ]; then
 			c06
 		else
-			printf "${RED}WHERE ARE YOU GOING ! GET YOUR SHIT TOGETHER.\n${NOCOLOR}"
+			printf "${RED}Ultimate test is meant to always be ultimate.\n${NOCOLOR}"
 	fi
 	printf "\n"
 }
 
-function	run_all() {
+function	run_all()
+{
 	shell00
 	shell01
 	c00
