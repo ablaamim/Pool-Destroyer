@@ -58,7 +58,12 @@ case $1 in
 esac
 
 #rm -rf src user_output 
-printf "${GREEN}${BOLD}\n>>> K I L L  N E X T  T A R G E T >>>\n${NOCOLOR}"
+echo "   ███████╗██╗███╗░░██╗██╗░██████╗██╗░░██╗"
+echo "   ██╔════╝██║████╗░██║██║██╔════╝██║░░██║"
+echo "   █████╗░░██║██╔██╗██║██║╚█████╗░███████║"
+echo "   ██╔══╝░░██║██║╚████║██║░╚═══██╗██╔══██║"
+echo "   ██║░░░░░██║██║░╚███║██║██████╔╝██║░░██║"
+echo "   ╚═╝░░░░░╚═╝╚═╝░░╚══╝╚═╝╚═════╝░╚═╝░░╚═╝"
 printf "\nIts either your code survives or it gets wrecked.\n" >> DEEPTHOUGHT
 cd $current_dir
 cleanup
