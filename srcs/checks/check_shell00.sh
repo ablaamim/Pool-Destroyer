@@ -48,9 +48,10 @@ function	check_sh00_ex01()
 		return
 	fi
 	FILESIZE=$(wc -c src/shell00/ex01/testShell00 | sed -e 's/\ src\/shell00\/ex01\/testShell00//g')
-	if   (ls -l src/shell00/ex01 | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | cut -c 1-11 | tr -d '\n' && ls -l | sed -e 's/ //g' | grep "40" | rev | cut -c 1-20 | rev) > /dev/null && [ $FILESIZE -eq 40 ]  ; then
+	if   (ls -l src/shell00/ex01 | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | cut -c 1-11 | tr -d '\n' && ls -l | sed -e 's/ //g' | grep "40" | rev | cut -c 1-20 | rev > tests/shell00/ex01/testShell00) > /dev/null && [ $FILESIZE -eq 40 ] ; then
 		printf "${uni_success}ex01/testShell00\t\t${diff_ok}${NOCOLOR}\n"
 		printf "\ndiff ok :D\n" >> DEEPTHOUGHT
+		printf "\n Timestamp is not supported, this script only checks filesize && attributes\n"
 	else
 		printf "${uni_fail}ex01/testShell00\t\t${diff_ko}${NOCOLOR}\n"
 		ls -l src/shell00/ex01 >> DEEPTHOUGHT
@@ -80,7 +81,6 @@ function	check_sh00_ex02()
 	rm src/shell00/ex02/exo2.tar
 #	ls -l src/shell00/ex02
 
-	# Check test0
 	printf "\ntest0\n" >> DEEPTHOUGHT
 	if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | grep -E "20[0-9]{2}" | grep -e "test0" > /dev/null ; then
 		printf "${uni_success}ex02/test0\t\t\t${diff_ok}${NOCOLOR}\n"
