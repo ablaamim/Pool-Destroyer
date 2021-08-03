@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:05:05 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 20:23:01 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/03 17:21:51 by root             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -249,7 +249,7 @@ function	check_sh00_ex06()
 		return
 	fi
 	USER_OUTPUT=$(bash $src_path/shell00/ex06/git_ignore.sh)
-	RES=$(git ls-files -i -o --exclude-standard)
+	RES=$(git clean -Xdn | cut -c 14-256)
 	DIFF=$(diff <(echo "$USER_OUTPUT") <(echo "$RES"))
 	if [ "$USER_OUTPUT" == "$RES" ] ; then
 		printf "${uni_success}ex05/git_ignore.sh\t\t${diff_ok}${NOCOLOR}\n"
