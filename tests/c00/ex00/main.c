@@ -6,13 +6,13 @@
 /*   By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 18:37:54 by alaamimi          #+#    #+#             */
-/*   Updated: 2021/06/21 18:38:02 by alaamimi         ###   ########.fr       */
+/*   Updated: 2021/08/08 15:48:10 by alaamimi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../header/user_functions.h"
 
-int		main(void)
+int	main(void)
 {
 	int		i = 32;
 	while (i < 127)

@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Tue Aug  3 17:08:36 +01 2021
+Tue Aug  3 17:47:35 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,3 +11,61 @@ root
 
 Ready for testing
 
+LOADING shell00:
+
+= ex00 =
+==========================================
+
+diff ok :D
+
+= ex01 =
+==========================================
+$>Extracting archive...
+Done.
+
+diff ok :D
+
+= ex02 =
+==========================================
+$>src/shell00/ex02/exo2.tar is missing. Skipping...
+
+
+= ex03 =
+==========================================
+$>src/shell00/ex03/klist.txt is missing. Skipping...
+
+
+= ex04 =
+==========================================
+
+diff ok :D
+
+= ex05 =
+==========================================
+
+diff ok :D
+
+= ex06 =
+==========================================
+
+diff ok :D
+
+= ex07 =
+==========================================
+$>src/shell00/ex07/b is missing. Skipping...
+
+
+= ex08 =
+==========================================
+
+diff ok :D
+
+= ex09 =
+==========================================
+
+diff ok :D
+
+
+All shell00 tests are done.
+
+Its either your code survives or it gets wrecked.
