@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:59:06 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 20:07:26 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/12 15:23:15 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -199,7 +199,8 @@ function	check_c00_ex04()
 	cd $current_dir
 }
 
-function	check_c00_ex05() {
+function	check_c00_ex05()
+{
 	usr_out=$current_dir/user_output/c00/ex05
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex05:\n${NOCOLOR}"
@@ -233,7 +234,8 @@ function	check_c00_ex05() {
 	cd $current_dir
 }
 
-function	check_c00_ex06() {
+function	check_c00_ex06()
+{
 	usr_out=$current_dir/user_output/c00/ex06
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex06:\n${NOCOLOR}"

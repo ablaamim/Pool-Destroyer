@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:24:43 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 23:30:22 by root             ###   ########.fr        #
+#    Updated: 2021/08/12 15:21:58 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,10 +34,10 @@ source	srcs/checks/check_c04.sh
 source	srcs/checks/check_c05.sh
 source	srcs/checks/check_c06.sh
 
-function	cleanup() {
+function	cleanup()
+{
 	rm -rf src user_output
 }
-
 
 case $1 in
 	--help | -h) 
@@ -67,4 +67,3 @@ echo "   ╚═╝░░░░░╚═╝╚═╝░░╚══╝╚═╝�
 printf "\nIts either your code survives or it gets wrecked.\n" >> DEEPTHOUGHT
 cd $current_dir
 cleanup
-#trap cleanup EXIT

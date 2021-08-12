@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Tue Aug  3 17:47:35 +01 2021
+Wed Aug 11 14:20:00 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,61 +11,71 @@ root
 
 Ready for testing
 
-LOADING shell00:
+LOADING c02:
 
 = ex00 =
 ==========================================
+
+Norme: ./src/c02/ex00/ft_strcpy.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c02/ex00/main.c ./src/c02/ex00/ft_strcpy.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex00
 
 diff ok :D
 
 = ex01 =
 ==========================================
-$>Extracting archive...
-Done.
+
+Norme: ./src/c02/ex01/ft_strncpy.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c02/ex01/main.c ./src/c02/ex01/ft_strncpy.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex01
 
 diff ok :D
 
 = ex02 =
 ==========================================
-$>src/shell00/ex02/exo2.tar is missing. Skipping...
-
+$>src/c02/ex02/ft_str_is_alpha.c is missing. Skipping...
 
 = ex03 =
 ==========================================
-$>src/shell00/ex03/klist.txt is missing. Skipping...
-
+$>src/c02/ex03/ft_str_is_numeric.c is missing. Skipping...
 
 = ex04 =
 ==========================================
-
-diff ok :D
+$>src/c02/ex04/ft_str_is_lowercase.c is missing. Skipping...
 
 = ex05 =
 ==========================================
-
-diff ok :D
+$>src/c02/ex05/ft_str_is_uppercase.c is missing. Skipping...
 
 = ex06 =
 ==========================================
-
-diff ok :D
+$>src/c02/ex06/ft_str_is_printable.c is missing. Skipping...
 
 = ex07 =
 ==========================================
-$>src/shell00/ex07/b is missing. Skipping...
-
+$>src/c02/ex07/ft_strupcase.c is missing. Skipping...
 
 = ex08 =
 ==========================================
-
-diff ok :D
+$>src/c02/ex08/ft_strlowcase.c is missing. Skipping...
 
 = ex09 =
 ==========================================
+$>src/c02/ex09/ft_strcapitalize.c is missing. Skipping...
 
-diff ok :D
+= ex10 =
+==========================================
+$>src/c02/ex10/ft_strlcpy.c is missing. Skipping...
+
+= ex11 =
+==========================================
+$>src/c02/ex11/ft_putstr_non_printable.c is missing. Skipping...
+
+= ex12 =
+==========================================
+
+This exercise is not supported yet.
 
 
-All shell00 tests are done.
+
+All c02 tests are done.
 
 Its either your code survives or it gets wrecked.
