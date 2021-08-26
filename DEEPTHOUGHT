@@ -2,80 +2,37 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Wed Aug 11 14:20:00 +01 2021
+Thu Aug 26 22:31:32 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
 $> echo $USER_NAME
-root
+alaamimi
 
 Ready for testing
 
-LOADING c02:
+LOADING c07:
 
 = ex00 =
 ==========================================
 
-Norme: ./src/c02/ex00/ft_strcpy.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c02/ex00/main.c ./src/c02/ex00/ft_strcpy.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex00
+Norme: ./src/c07/ex00/ft_strdup.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c07/ex00/main.c ./src/c07/ex00/ft_strdup.c -o /home/vlad/Pool-Destroyer/user_output/c07/ex00
+./tests/c07/ex00/main.c: In function ‘main’:
+./tests/c07/ex00/main.c:18:11: error: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Werror=format=]
+   18 |  printf("%s\n", ft_strdup("Hello!"));
+      |          ~^     ~~~~~~~~~~~~~~~~~~~
+      |           |     |
+      |           |     int
+      |           char *
+      |          %d
+cc1: all warnings being treated as errors
+This compilation failed.	[0;31m[KO][0m 
 
-diff ok :D
-
-= ex01 =
-==========================================
-
-Norme: ./src/c02/ex01/ft_strncpy.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c02/ex01/main.c ./src/c02/ex01/ft_strncpy.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex01
-
-diff ok :D
-
-= ex02 =
-==========================================
-$>src/c02/ex02/ft_str_is_alpha.c is missing. Skipping...
-
-= ex03 =
-==========================================
-$>src/c02/ex03/ft_str_is_numeric.c is missing. Skipping...
-
-= ex04 =
-==========================================
-$>src/c02/ex04/ft_str_is_lowercase.c is missing. Skipping...
-
-= ex05 =
-==========================================
-$>src/c02/ex05/ft_str_is_uppercase.c is missing. Skipping...
-
-= ex06 =
-==========================================
-$>src/c02/ex06/ft_str_is_printable.c is missing. Skipping...
-
-= ex07 =
-==========================================
-$>src/c02/ex07/ft_strupcase.c is missing. Skipping...
-
-= ex08 =
-==========================================
-$>src/c02/ex08/ft_strlowcase.c is missing. Skipping...
-
-= ex09 =
-==========================================
-$>src/c02/ex09/ft_strcapitalize.c is missing. Skipping...
-
-= ex10 =
-==========================================
-$>src/c02/ex10/ft_strlcpy.c is missing. Skipping...
-
-= ex11 =
-==========================================
-$>src/c02/ex11/ft_putstr_non_printable.c is missing. Skipping...
-
-= ex12 =
-==========================================
-
-This exercise is not supported yet.
+diff ko :(
 
 
 
-All c02 tests are done.
+All c07 tests are done.
 
 Its either your code survives or it gets wrecked.

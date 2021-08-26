@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:24:43 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/12 15:21:58 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/08/26 21:40:35 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ source	srcs/checks/check_c03.sh
 source	srcs/checks/check_c04.sh
 source	srcs/checks/check_c05.sh
 source	srcs/checks/check_c06.sh
+source	srcs/checks/check_c07.sh
 
 function	cleanup()
 {
@@ -51,6 +52,8 @@ case $1 in
 	--c04 | -c04) init ; c04 ;;
 	--c05 | -c05) init ; c05 ;;
 	--c06 | -c06) init ; c06 ;;
+	--c07 | -c07) init ; c07 ;;
+	--c08 | -c08) init ; c08 ;;
 	-a) init ; run_all ;;
 	*)
 #		man srcs/help ;;
