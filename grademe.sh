@@ -6,13 +6,13 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:24:43 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/26 21:40:35 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/07 19:45:28 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-src_path="../piscine" # set projects directory here
+src_path="../piscine" # set projects directory here, respecting the tree.
 current_dir=$PWD
 
 source	srcs/var/colors.sh
@@ -34,6 +34,14 @@ source	srcs/checks/check_c04.sh
 source	srcs/checks/check_c05.sh
 source	srcs/checks/check_c06.sh
 source	srcs/checks/check_c07.sh
+source	srcs/checks/sheck_c08.sh 
+source	srcs/checks/check_c09.sh 
+source	srcs/checks/check_c10.sh 
+source	srcs/checks/check_c11.sh 
+source	srcs/checks/check_c12.sh 
+source	srcs/checks/check_c13.sh
+
+#clean directories!
 
 function	cleanup()
 {
@@ -54,6 +62,11 @@ case $1 in
 	--c06 | -c06) init ; c06 ;;
 	--c07 | -c07) init ; c07 ;;
 	--c08 | -c08) init ; c08 ;;
+	--c09 | -c09) init ; c09 ;;
+	--c10 | -c10) init ; c10 ;;
+	--c11 | -c11) init ; c11 ;;
+	--c12 | -c12) init ; c12 ;;
+	--c13 | -c13) init ; c13 ;;
 	-a) init ; run_all ;;
 	*)
 #		man srcs/help ;;

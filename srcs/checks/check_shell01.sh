@@ -6,13 +6,14 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:07:30 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/21 18:07:35 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/07 19:31:20 by alaamimi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	check_sh01_ex01() {
+function	check_sh01_ex01()
+{
 	printf " ${YELLOW}${UNDERLINE}ex01:\n${NOCOLOR}"
 	printf "\n= ex01 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell01/ex01/print_groups.sh" ; then
@@ -37,7 +38,8 @@ function	check_sh01_ex01() {
 	cd $current_dir
 }
 
-function	check_sh01_ex02() {
+function	check_sh01_ex02()
+{
 	printf " ${YELLOW}${UNDERLINE}ex02:\n${NOCOLOR}"
 	printf "\n= ex02 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell01/ex02/find_sh.sh" ; then
@@ -63,7 +65,8 @@ function	check_sh01_ex02() {
 	cd $current_dir
 }
 
-function	check_sh01_ex03() {
+function	check_sh01_ex03()
+{
 	printf " ${YELLOW}${UNDERLINE}ex03:\n${NOCOLOR}"
 	printf "\n= ex03 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell01/ex03/count_files.sh" ; then
@@ -90,7 +93,8 @@ function	check_sh01_ex03() {
 	cd $current_dir
 }
 
-function	check_sh01_ex04() {
+function	check_sh01_ex04()
+{
 	printf " ${YELLOW}${UNDERLINE}ex04:\n${NOCOLOR}"
 	printf "\n= ex04 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists "src/shell01/ex04/MAC.sh" ; then
@@ -129,7 +133,8 @@ function	check_sh01_ex04() {
 	printf "Note: this might not work on linux.\n"
 }
 
-function	check_sh01_ex05() {
+function	check_sh01_ex05()
+{
 	printf " ${YELLOW}${UNDERLINE}ex05:\n${NOCOLOR}"
 	printf "\n= ex05 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists src/shell01/ex05/\"\\\?\$\*\'MaRViN\'\*\$\?\\\" ; then
@@ -147,7 +152,8 @@ function	check_sh01_ex05() {
 	fi
 }
 
-function	check_sh01_ex06() {
+function	check_sh01_ex06()
+{
 	printf " ${YELLOW}${UNDERLINE}ex06:\n${NOCOLOR}"
 	printf "\n= ex06 =\n==========================================\n" >> DEEPTHOUGHT
 	if ! file_exists src/shell01/ex06/skip.sh ; then
@@ -172,7 +178,8 @@ function	check_sh01_ex06() {
 	fi
 }
 
-function	check_sh01_ex07() {
+function	check_sh01_ex07()
+{
 	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
 	printf "\n= ex07 =\n==========================================\n" >> DEEPTHOUGHT
 	printf "${RED}This exercise is not supported yet.${NOCOLOR}\n"	
