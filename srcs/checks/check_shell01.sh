@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:07:30 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/07 19:31:20 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/17 18:12:48 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -197,7 +197,7 @@ function	shell01() {
 	mkdir src/shell01 user_output/shell01 
 	print_current_part "shell01"
 	cp -r $src_path/shell01/ex* ./src/shell01  # copying src files
-	
+
 	check_sh01_ex01
 	check_sh01_ex02
 	check_sh01_ex03
@@ -207,6 +207,6 @@ function	shell01() {
 	check_sh01_ex07
 	check_sh01_ex08
 	printf "${GREEN}\nAll shell01 tests are done.\n\n${NOCOLOR}"
-        printf "\n\nAll shell01 tests are done.\n" >> DEEPTHOUGHT
-#	rm -rf src user_output
+	printf "\n\nAll shell01 tests are done.\n" >> DEEPTHOUGHT
+	#	rm -rf src user_output
 }

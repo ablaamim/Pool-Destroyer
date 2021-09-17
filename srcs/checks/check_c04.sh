@@ -289,13 +289,13 @@ function	check_c04_ex05() {
 	printf "= ex05 =\n==========================================\n" >> DEEPTHOUGHT
 	printf "${RED}This exercise is not supported yet.${NOCOLOR}\n"
 	printf "\nThis exercise is not supported yet.\n\n" >> DEEPTHOUGHT
-	}
+}
 
 function	c04() {
 	mkdir src/c04 user_output/c04
 	print_current_part "c04"
 	cp -r $src_path/c04/ex* ./src/c04  # copying src files
-	
+
 	check_c04_ex00
 	check_c04_ex01
 	check_c04_ex02

@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/26 21:04:32 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/26 21:04:35 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/17 18:12:37 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ function	c07()
 	mkdir src/c07 user_output/c07
 	print_current_part "c07"
 	cp -r $src_path/c07/ex* ./src/c07  # copying src files
-	
+
 	check_c07_ex00
 
 	rm -rf $current_dir/user_output/c07 $current_dir/src/c07

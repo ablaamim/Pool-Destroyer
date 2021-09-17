@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/26 21:05:25 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/26 21:07:11 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/17 18:12:16 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -337,7 +337,7 @@ function	check_c03_ex05()
 		printf "\ndiff ko :(\n\n" >> DEEPTHOUGHT
 		return
 	fi
-	
+
 	cd $usr_out
 	printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
 	local TEST="0123456789"
@@ -391,7 +391,7 @@ function	c03()
 	mkdir src/c03 user_output/c03
 	print_current_part "c03"
 	cp -r $src_path/c03/ex* ./src/c03  # copying src files
-	
+
 	check_c03_ex00
 	check_c03_ex01
 	check_c03_ex02

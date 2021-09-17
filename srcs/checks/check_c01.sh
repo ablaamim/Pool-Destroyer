@@ -131,8 +131,8 @@ function	check_c01_ex03() {
 		local MOD=$((NUMBER[$j] % NUMBER[$j+1]))
 		local RES="div=$DIV, mod=$MOD"
 		local USER_OUTPUT=$(./user.out ${NUMBER[$j]} ${NUMBER[$j+1]})
-#		echo "res: $RES"
-#		echo  "div/mod ${NUMBER[$j]} ${NUMBER[$j+1]}"
+		#		echo "res: $RES"
+		#		echo  "div/mod ${NUMBER[$j]} ${NUMBER[$j+1]}"
 		printf "> test $i with a=${NUMBER[$j]} and b=${NUMBER[$j+1]}\n" >> $current_dir/DEEPTHOUGHT
 		if [ "$USER_OUTPUT" == "$RES" ] ; then
 			printf "${uni_success}ex03/ft_div_mod.c\t\t${diff_ok}${NOCOLOR}\n"
@@ -179,8 +179,8 @@ function	check_c01_ex04() {
 		local MOD=$((NUMBER[$j] % NUMBER[$j+1]))
 		local RES="div=$DIV, mod=$MOD"
 		local USER_OUTPUT=$(./user.out ${NUMBER[$j]} ${NUMBER[$j+1]})
-#		echo "res: $RES"
-#		echo  "div/mod ${NUMBER[$j]} ${NUMBER[$j+1]}"
+		#		echo "res: $RES"
+		#		echo  "div/mod ${NUMBER[$j]} ${NUMBER[$j+1]}"
 		printf "> test $i with a=${NUMBER[$j]} and b=${NUMBER[$j+1]}\n" >> $current_dir/DEEPTHOUGHT
 		if [ "$USER_OUTPUT" == "$RES" ] ; then
 			printf "${uni_success}ex04/ft_ultimate_div_mod.c\t${diff_ok}${NOCOLOR}\n"
@@ -294,15 +294,15 @@ function	check_c01_ex07() {
 		return
 	fi
 	cd $usr_out
-		local USER_OUTPUT=$(./user.out)
-		if [ "$USER_OUTPUT" == "0987654321" ] ; then
-			printf "${uni_success}ex07/ft_rev_int_tab.c\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex07/ft_rev_int_tab.c\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "0987654321") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
+	local USER_OUTPUT=$(./user.out)
+	if [ "$USER_OUTPUT" == "0987654321" ] ; then
+		printf "${uni_success}ex07/ft_rev_int_tab.c\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex07/ft_rev_int_tab.c\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "0987654321") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
 	cd $current_dir
 }
 
@@ -327,15 +327,15 @@ function	check_c01_ex08() {
 		return
 	fi
 	cd $usr_out
-		local USER_OUTPUT=$(./user.out)
-		if [ "$USER_OUTPUT" == "0123456789" ] ; then
-			printf "${uni_success}ex08/ft_sort_int_tab.c\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex08/ft_sort_int_tab.c\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "0123456789") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
+	local USER_OUTPUT=$(./user.out)
+	if [ "$USER_OUTPUT" == "0123456789" ] ; then
+		printf "${uni_success}ex08/ft_sort_int_tab.c\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex08/ft_sort_int_tab.c\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "0123456789") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
 	cd $current_dir
 }
 
@@ -343,7 +343,7 @@ function	c01() {
 	mkdir src/c01 user_output/c01
 	print_current_part "c01"
 	cp -r $src_path/c01/ex* ./src/c01  # copying src files
-	
+
 	check_c01_ex00
 	check_c01_ex01
 	check_c01_ex02

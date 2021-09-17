@@ -67,6 +67,12 @@ $>./grademe.sh
 ```
 ---
 
+## bugs :
+
+> Shell00 and Shell01 still got a lot to fix on, so i advice you to relay only on C tests.
+
+---
+
 ## :video_game: Interface :
 
 ---

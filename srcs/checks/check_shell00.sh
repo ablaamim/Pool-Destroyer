@@ -6,13 +6,16 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:05:05 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/03 17:21:51 by root             ###   ########.fr        #
+#    Updated: 2021/09/17 18:05:04 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 #checker for shell00
+
+#ex00
+
 function	check_sh00_ex00()
 {
 	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
@@ -22,7 +25,7 @@ function	check_sh00_ex00()
 		return
 	fi
 	diff src/shell00/ex00/z tests/shell00/ex00/z >> DEEPTHOUGHT 2> /dev/null
-#	printf ""
+	#	printf ""
 	if ! diff -q src/shell00/ex00/z tests/shell00/ex00/z ; then
 		printf "${uni_fail}ex00/z\t\t\t${diff_ko}${NOCOLOR}\n"
 		printf "\ndiff ko :(\n" >> DEEPTHOUGHT
@@ -31,6 +34,8 @@ function	check_sh00_ex00()
 		printf "\ndiff ok :D\n" >> DEEPTHOUGHT
 	fi
 }
+
+#ex01
 
 function	check_sh00_ex01()
 {
@@ -59,6 +64,8 @@ function	check_sh00_ex01()
 	fi
 }
 
+#ex02
+
 function	check_sh00_ex02()
 {
 	printf " ${YELLOW}${UNDERLINE}ex02:\n${NOCOLOR}"
@@ -76,10 +83,10 @@ function	check_sh00_ex02()
 			msg_nothing_turned_in "ex02/test$i"
 			return
 		fi
-	let "i += 1"
+		let "i += 1"
 	done
 	rm src/shell00/ex02/exo2.tar
-#	ls -l src/shell00/ex02
+	#	ls -l src/shell00/ex02
 
 	printf "\ntest0\n" >> DEEPTHOUGHT
 	if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "-r--r-xr-x1" | grep -E "20[0-9]{2}" | grep -e "test0" > /dev/null ; then
@@ -90,76 +97,76 @@ function	check_sh00_ex02()
 		ls -l src/shell00/ex02/test0 >> DEEPTHOUGHT
 		printf "diff ko :(\n" >> DEEPTHOUGHT
 	fi
-	
-	# Check test1
-	printf "\ntest1\n" >> DEEPTHOUGHT
-	FILESIZE=$(wc -c src/shell00/ex02/test1 | sed -e 's/\ src\/shell00\/ex02\/test1//g')
-	if ls -l src/shell00/ex02/test1 | sed -e 's/ //g' | grep -e "-rwx--xr--1" | grep -E "20[0-9]{2}" | grep -e "test1" > /dev/null && [ $FILESIZE -eq 4 ] ; then
-		printf "${uni_success}ex02/test1\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex02/test1\t\t\t${diff_ko}${NOCOLOR}\n"
-		ls -l src/shell00/ex02/test1 >> DEEPTHOUGHT
-		printf "diff ko :(\n" >> DEEPTHOUGHT
-	fi
 
-	# Check test2
-	printf "\ntest2\n" >> DEEPTHOUGHT
-	if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "dr-x---r--2" | grep -E "20[0-9]{2}" | grep -e "test2" > /dev/null ; then
-		printf "${uni_success}ex02/test2\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex02/test2\t\t\t${diff_ko}${NOCOLOR}\n"
-		ls -l src/shell00/ex02/test2 >> DEEPTHOUGHT
-		printf "diff ko :(\n" >> DEEPTHOUGHT
-	fi
+# Check test1
+printf "\ntest1\n" >> DEEPTHOUGHT
+FILESIZE=$(wc -c src/shell00/ex02/test1 | sed -e 's/\ src\/shell00\/ex02\/test1//g')
+if ls -l src/shell00/ex02/test1 | sed -e 's/ //g' | grep -e "-rwx--xr--1" | grep -E "20[0-9]{2}" | grep -e "test1" > /dev/null && [ $FILESIZE -eq 4 ] ; then
+	printf "${uni_success}ex02/test1\t\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex02/test1\t\t\t${diff_ko}${NOCOLOR}\n"
+	ls -l src/shell00/ex02/test1 >> DEEPTHOUGHT
+	printf "diff ko :(\n" >> DEEPTHOUGHT
+fi
 
-	# Check test3
-	printf "\ntest3\n" >> DEEPTHOUGHT
-	FILESIZE=$(wc -c src/shell00/ex02/test3 | sed -e 's/\ src\/shell00\/ex02\/test3//g')
-	if ls -l src/shell00/ex02/test3 | sed -e 's/ //g' | grep -e "-r-----r--2" | grep -E "20[0-9]{2}" | grep -e "test3" > /dev/null && [ $FILESIZE -eq 1 ] ; then
-		printf "${uni_success}ex02/test3\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex02/test3\t\t\t${diff_ko}${NOCOLOR}\n"
-		ls -l src/shell00/ex02/test3 >> DEEPTHOUGHT
-		printf "diff ko :(\n" >> DEEPTHOUGHT
-	fi
+# Check test2
+printf "\ntest2\n" >> DEEPTHOUGHT
+if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "dr-x---r--2" | grep -E "20[0-9]{2}" | grep -e "test2" > /dev/null ; then
+	printf "${uni_success}ex02/test2\t\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex02/test2\t\t\t${diff_ko}${NOCOLOR}\n"
+	ls -l src/shell00/ex02/test2 >> DEEPTHOUGHT
+	printf "diff ko :(\n" >> DEEPTHOUGHT
+fi
 
-	# Check test4
-	printf "\ntest4\n" >> DEEPTHOUGHT
-	FILESIZE=$(wc -c src/shell00/ex02/test4 | sed -e 's/\ src\/shell00\/ex02\/test4//g')
-	if ls -l src/shell00/ex02/test4 | sed -e 's/ //g' | grep -e "-rw-r----x1" | grep -E "20[0-9]{2}" | grep -e "test4" > /dev/null && [ $FILESIZE -eq 2 ] ; then
-		printf "${uni_success}ex02/test4\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex02/test4\t\t\t${diff_ko}${NOCOLOR}\n"
-		ls -l src/shell00/ex02/test4 >> DEEPTHOUGHT
-		printf "diff ko :(\n" >> DEEPTHOUGHT
-	fi
+# Check test3
+printf "\ntest3\n" >> DEEPTHOUGHT
+FILESIZE=$(wc -c src/shell00/ex02/test3 | sed -e 's/\ src\/shell00\/ex02\/test3//g')
+if ls -l src/shell00/ex02/test3 | sed -e 's/ //g' | grep -e "-r-----r--2" | grep -E "20[0-9]{2}" | grep -e "test3" > /dev/null && [ $FILESIZE -eq 1 ] ; then
+	printf "${uni_success}ex02/test3\t\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex02/test3\t\t\t${diff_ko}${NOCOLOR}\n"
+	ls -l src/shell00/ex02/test3 >> DEEPTHOUGHT
+	printf "diff ko :(\n" >> DEEPTHOUGHT
+fi
 
-	# Check test5
-	printf "\ntest5\n" >> DEEPTHOUGHT
-	FILESIZE=$(wc -c src/shell00/ex02/test5 | sed -e 's/\ src\/shell00\/ex02\/test5//g')
-	if ls -l src/shell00/ex02/test5 | sed -e 's/ //g' | grep -e "-r-----r--2" | grep -E "20[0-9]{2}" | grep -e "test5" > /dev/null && [ $FILESIZE -eq 1 ] ; then
-		printf "${uni_success}ex02/test5\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex02/test5\t\t\t${diff_ko}${NOCOLOR}\n"
-		ls -l src/shell00/ex02/test5 >> DEEPTHOUGHT
-		printf "diff ko :(\n" >> DEEPTHOUGHT
-	fi
+# Check test4
+printf "\ntest4\n" >> DEEPTHOUGHT
+FILESIZE=$(wc -c src/shell00/ex02/test4 | sed -e 's/\ src\/shell00\/ex02\/test4//g')
+if ls -l src/shell00/ex02/test4 | sed -e 's/ //g' | grep -e "-rw-r----x1" | grep -E "20[0-9]{2}" | grep -e "test4" > /dev/null && [ $FILESIZE -eq 2 ] ; then
+	printf "${uni_success}ex02/test4\t\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex02/test4\t\t\t${diff_ko}${NOCOLOR}\n"
+	ls -l src/shell00/ex02/test4 >> DEEPTHOUGHT
+	printf "diff ko :(\n" >> DEEPTHOUGHT
+fi
 
-	# Check test6
-	printf "\ntest6\n" >> DEEPTHOUGHT
-	if ls -l src/shell00/ex02/test6 | sed -e 's/ //g' | grep -e "lrwxr-xr-x1" | grep -E "20[0-9]{2}" | grep -e "test6" | grep -e "test0" > /dev/null ; then
-		printf "${uni_success}ex02/test6\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex02/test6\t\t\t${diff_ko}${NOCOLOR}Note: test6 does not work on linux.\n"
-		ls -l src/shell00/ex02/test6 >> DEEPTHOUGHT
-		printf "diff ko :(\n" >> DEEPTHOUGHT
-	fi
+# Check test5
+printf "\ntest5\n" >> DEEPTHOUGHT
+FILESIZE=$(wc -c src/shell00/ex02/test5 | sed -e 's/\ src\/shell00\/ex02\/test5//g')
+if ls -l src/shell00/ex02/test5 | sed -e 's/ //g' | grep -e "-r-----r--2" | grep -E "20[0-9]{2}" | grep -e "test5" > /dev/null && [ $FILESIZE -eq 1 ] ; then
+	printf "${uni_success}ex02/test5\t\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex02/test5\t\t\t${diff_ko}${NOCOLOR}\n"
+	ls -l src/shell00/ex02/test5 >> DEEPTHOUGHT
+	printf "diff ko :(\n" >> DEEPTHOUGHT
+fi
+
+# Check test6
+printf "\ntest6\n" >> DEEPTHOUGHT
+if ls -l src/shell00/ex02/test6 | sed -e 's/ //g' | grep -e "lrwxr-xr-x1" | grep -E "20[0-9]{2}" | grep -e "test6" | grep -e "test0" > /dev/null ; then
+	printf "${uni_success}ex02/test6\t\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex02/test6\t\t\t${diff_ko}${NOCOLOR}Note: test6 does not work on linux.\n"
+	ls -l src/shell00/ex02/test6 >> DEEPTHOUGHT
+	printf "diff ko :(\n" >> DEEPTHOUGHT
+fi
 }
 
 function	check_sh00_ex03()
@@ -185,12 +192,12 @@ function	check_sh00_ex03()
 # echo "1" $DIFF_LINE_ONE "2" $DIFF_LINE_TWO "3"$DIFF_LINE_THREE "4" $DIFF_LINE_FOUR "5" $DIFF_LINE_FIVE "6" $DIFF_LINE_SIX 
 
 if [ "$DIFF_LINE_ONE" != "" ] && [ "$DIFF_LINE_TWO" != "" ] && [ "$DIFF_LINE_THREE" == "" ] && [ "$DIFF_LINE_FOUR" != "" ] && [ "$DIFF_LINE_FIVE" != "" ] && [ "$DIFF_LINE_SIX" != "" ] ; then
-		printf "${uni_success}ex03/klist.txt\t\t${diff_ok}${NOCOLOR}\n"
-		printf "diff ok :D\n" >> DEEPTHOUGHT
-	else
-		printf "${uni_fail}ex03/klist.txt\t\t${diff_ko}${NOCOLOR}\n"
-		printf "\ndiff ko :(\n" >> DEEPTHOUGHT
-	fi	
+	printf "${uni_success}ex03/klist.txt\t\t${diff_ok}${NOCOLOR}\n"
+	printf "diff ok :D\n" >> DEEPTHOUGHT
+else
+	printf "${uni_fail}ex03/klist.txt\t\t${diff_ko}${NOCOLOR}\n"
+	printf "\ndiff ko :(\n" >> DEEPTHOUGHT
+fi	
 }
 
 function	check_sh00_ex04()
@@ -294,39 +301,39 @@ function	check_sh00_ex08()
 	cp src/shell00/ex08/clean tests/shell00/ex08
 	cd tests/shell00/ex08
 	touch \~test1 \#test2\# dir1/test3\# dir1/\#test4\# test5\# dir1/\#test6 dir1/test7\~ \#test8
-	bash clean > /dev/null
-	if ls | grep -e "test2" || ls dir1 | grep -e "test7" || ls dir1 | grep -e "test4" ; then
-		printf "${uni_fail}ex08/clean\t\t\t${diff_ko}${NOCOLOR}\n"
-		ls -l | grep -e "test2" ; ls -l dir1 | grep -e "test7" ; ls -l dir1 | grep -e "test4" >> $current_dir/DEEPTHOUGHT
-		printf "\ndiff ko :(\n" >> $current_dir/DEEPTHOUGHT
-	else
-		printf "${uni_success}ex08/clean\t\t\t${diff_ok}${NOCOLOR}\n"
-		printf "\ndiff ok :D\n" >> $current_dir/DEEPTHOUGHT
-	fi
-	cd $current_dir
-	rm -rf tests/shell00/ex08
-}
+		bash clean > /dev/null
+			if ls | grep -e "test2" || ls dir1 | grep -e "test7" || ls dir1 | grep -e "test4" ; then
+				printf "${uni_fail}ex08/clean\t\t\t${diff_ko}${NOCOLOR}\n"
+				ls -l | grep -e "test2" ; ls -l dir1 | grep -e "test7" ; ls -l dir1 | grep -e "test4" >> $current_dir/DEEPTHOUGHT
+				printf "\ndiff ko :(\n" >> $current_dir/DEEPTHOUGHT
+			else
+				printf "${uni_success}ex08/clean\t\t\t${diff_ok}${NOCOLOR}\n"
+				printf "\ndiff ok :D\n" >> $current_dir/DEEPTHOUGHT
+			fi
+			cd $current_dir
+			rm -rf tests/shell00/ex08
+		}
 
-function	check_sh00_ex09()
-{
-	printf " ${YELLOW}${UNDERLINE}ex09:\n${NOCOLOR}"
-	printf "\n= ex09 =\n==========================================\n" >> DEEPTHOUGHT
-	if ! file_exists "src/shell00/ex09/ft_magic" ; then
-		msg_nothing_turned_in "ex09/ft_magic"
-		return
-	fi
-#	USER_OUTPUT=$(cat src/shell00/ex09/ft_magic | tr -d \\n)
-#	RES=$(cat tests/shell00/ex09/ft_magic | tr -d \\n)
-	DIFF=$(diff -q src/shell00/ex09/ft_magic tests/shell00/ex09/ft_magic)
-	if [ "$DIFF" != "" ] ; then
-		printf "${uni_fail}ex09_ft_magic\t\t${diff_ko}${NOCOLOR}\n"
-		diff -q src/shell00/ex09/ft_magic tests/shell00/ex09/ft_magic >> DEEPTHOUGHT
-		printf "\ndiff ko :(\n" >> $current_dir/DEEPTHOUGHT
-	else
-		printf "${uni_success}ex09/ft_magic\t\t${diff_ok}${NOCOLOR}\n"
-		printf "\ndiff ok :D\n" >> $current_dir/DEEPTHOUGHT
-	fi
-}
+	function	check_sh00_ex09()
+	{
+		printf " ${YELLOW}${UNDERLINE}ex09:\n${NOCOLOR}"
+		printf "\n= ex09 =\n==========================================\n" >> DEEPTHOUGHT
+		if ! file_exists "src/shell00/ex09/ft_magic" ; then
+			msg_nothing_turned_in "ex09/ft_magic"
+			return
+		fi
+		#	USER_OUTPUT=$(cat src/shell00/ex09/ft_magic | tr -d \\n)
+		#	RES=$(cat tests/shell00/ex09/ft_magic | tr -d \\n)
+		DIFF=$(diff -q src/shell00/ex09/ft_magic tests/shell00/ex09/ft_magic)
+		if [ "$DIFF" != "" ] ; then
+			printf "${uni_fail}ex09_ft_magic\t\t${diff_ko}${NOCOLOR}\n"
+			diff -q src/shell00/ex09/ft_magic tests/shell00/ex09/ft_magic >> DEEPTHOUGHT
+			printf "\ndiff ko :(\n" >> $current_dir/DEEPTHOUGHT
+		else
+			printf "${uni_success}ex09/ft_magic\t\t${diff_ok}${NOCOLOR}\n"
+			printf "\ndiff ok :D\n" >> $current_dir/DEEPTHOUGHT
+		fi
+	}
 
 function	shell00()
 {

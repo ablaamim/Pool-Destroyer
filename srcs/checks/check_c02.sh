@@ -435,28 +435,28 @@ function	check_c02_ex07() {
 		return
 	fi
 	cd $usr_out
-		printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "they built the highway")
-		local RES="THEY BUILT THE HIGHWAY"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex07/ft_strupcase.c\t\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex07/ft_strupcase.c\t\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
-		printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "th3y bui|t the h!\\ghway")
-		local RES="TH3Y BUI|T THE H!\\GHWAY"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex07/ft_strupcase.c\t\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex07/ft_strupcase.c\t\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
+	printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "they built the highway")
+	local RES="THEY BUILT THE HIGHWAY"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex07/ft_strupcase.c\t\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex07/ft_strupcase.c\t\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
+	printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "th3y bui|t the h!\\ghway")
+	local RES="TH3Y BUI|T THE H!\\GHWAY"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex07/ft_strupcase.c\t\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex07/ft_strupcase.c\t\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
 	cd $current_dir
 }
 
@@ -481,28 +481,28 @@ function	check_c02_ex08() {
 		return
 	fi
 	cd $usr_out
-		printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "THEY BUILT THE HIGHWAY")
-		local RES="they built the highway"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex08/ft_strlowcase.c\t\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex08/ft_strlowcase.c\t\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
-		printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "TH3Y BUI|T THE H!\\GHWAY")
-		local RES="th3y bui|t the h!\\ghway"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex08/ft_strlowcase.c\t\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex08/ft_strlowcase.c\t\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
+	printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "THEY BUILT THE HIGHWAY")
+	local RES="they built the highway"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex08/ft_strlowcase.c\t\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex08/ft_strlowcase.c\t\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
+	printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "TH3Y BUI|T THE H!\\GHWAY")
+	local RES="th3y bui|t the h!\\ghway"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex08/ft_strlowcase.c\t\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex08/ft_strlowcase.c\t\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
 	cd $current_dir
 }
 
@@ -527,39 +527,39 @@ function	check_c02_ex09() {
 		return
 	fi
 	cd $usr_out
-		printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "they built the highway")
-		local RES="They Built The Highway"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex09/ft_strcapitalize.c\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex09/ft_strcapitalize.c\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
-		printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "th3Y=bu1|t&thE h!\\ghWAY")
-		local RES="Th3y=Bu1|T&The H!\\Ghway"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex09/ft_strcapitalize.c\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex09/ft_strcapitalize.c\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
-		printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
-		local USER_OUTPUT=$(./user.out "THEY BUILT THE HIGHWAY")
-		local RES="They Built The Highway"
-		if [ "$USER_OUTPUT" == "$RES" ] ; then
-			printf "${uni_success}ex09/ft_strcapitalize.c\t${diff_ok}${NOCOLOR}\n"
-			printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
-		else
-			printf "${uni_fail}ex09/ft_strcapitalize.c\t${diff_ko}${NOCOLOR}\n"
-			diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
-			printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
-		fi
+	printf "> test 1\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "they built the highway")
+	local RES="They Built The Highway"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex09/ft_strcapitalize.c\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex09/ft_strcapitalize.c\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
+	printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "th3Y=bu1|t&thE h!\\ghWAY")
+	local RES="Th3y=Bu1|T&The H!\\Ghway"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex09/ft_strcapitalize.c\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex09/ft_strcapitalize.c\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
+	printf "> test 2\n" >> $current_dir/DEEPTHOUGHT
+	local USER_OUTPUT=$(./user.out "THEY BUILT THE HIGHWAY")
+	local RES="They Built The Highway"
+	if [ "$USER_OUTPUT" == "$RES" ] ; then
+		printf "${uni_success}ex09/ft_strcapitalize.c\t${diff_ok}${NOCOLOR}\n"
+		printf "diff ok :D\n\n" >> $current_dir/DEEPTHOUGHT
+	else
+		printf "${uni_fail}ex09/ft_strcapitalize.c\t${diff_ko}${NOCOLOR}\n"
+		diff <(echo "$RES") <(echo $USER_OUTPUT) >> $current_dir/DEEPTHOUGHT
+		printf "diff ko :(\n\n" >> $current_dir/DEEPTHOUGHT
+	fi
 	cd $current_dir
 }
 
@@ -642,7 +642,7 @@ function	c02() {
 	mkdir src/c02 user_output/c02
 	print_current_part "c02"
 	cp -r $src_path/c02/ex* ./src/c02  # copying src files
-	
+
 	check_c02_ex00
 	check_c02_ex01
 	check_c02_ex02

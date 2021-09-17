@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 19:03:34 by alaamimi          #+#    #+#              #
-#    Updated: 2021/06/21 19:03:37 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/17 18:12:32 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -147,7 +147,7 @@ function	c06() {
 	mkdir src/c06 user_output/c06
 	print_current_part "c06"
 	cp -r $src_path/c06/ex* ./src/c06  # copying src files
-	
+
 	check_c06_ex00
 	check_c06_ex01
 	check_c06_ex02
