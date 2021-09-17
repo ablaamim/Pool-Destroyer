@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:24:43 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/07 19:45:28 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/17 18:21:23 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,7 @@ case $1 in
 	--c13 | -c13) init ; c13 ;;
 	-a) init ; run_all ;;
 	*)
-#		man srcs/help ;;
+		#		man srcs/help ;;
 		init ; choices ;;# shell00 ; shell01 ; c00 ; c01 ; c02;; 
 esac
 

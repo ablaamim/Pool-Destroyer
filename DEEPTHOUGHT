@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Fri Sep 17 18:06:00 +01 2021
+Fri Sep 17 18:22:16 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -89,3 +89,52 @@ diff ok :D
 ==========================================
 
 Norme: ./src/c00/ex06/ft_print_comb2.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex06/main.c ./src/c00/ex06/ft_print_comb2.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex06
+
+diff ok :D
+
+= ex07 =
+==========================================
+
+Norme: ./src/c00/ex07/ft_putnbr.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex07/main.c ./src/c00/ex07/ft_putnbr.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex07
+> test 0 with nb=42
+diff ok :D
+
+> test 1 with nb=2147483647
+diff ok :D
+
+> test 2 with nb=1337
+diff ok :D
+
+> test 3 with nb=-42
+diff ok :D
+
+> test 4 with nb=-2147483647
+diff ok :D
+
+> test 5 with nb=-1337
+diff ok :D
+
+> test 6 with nb=6473287
+diff ok :D
+
+> test 7 with nb=-328
+diff ok :D
+
+> test 8 with nb=612567
+diff ok :D
+
+= ex08 =
+==========================================
+
+Norme: ./src/c00/ex08/ft_print_combn.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c00/ex08/main.c ./src/c00/ex08/ft_print_combn.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex08
+> test 1
+
+diff ko :(
+
+
+Every act of creation is a first act of destruction.
+
+Its either your code survives or it gets wrecked.

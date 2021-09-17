@@ -11,6 +11,12 @@
 
 ---
 
+## DISCLAIMER :
+
+THIS PROGRAM ONLY WORKS ON LINUX MACHINES.
+
+---
+
 ## :wrench: This program checks :
 
 :heavy_check_mark: check norm V3.0 [install norminette](https://github.com/42Paris/norminette)
