@@ -1,6 +1,6 @@
 ---
 
-## :bomb: POOL DESTROYER :bomb:
+## :bomb: POOL DESTROYER :
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-## DISCLAIMER :
+## :information_source: DISCLAIMER :
 
 THIS PROGRAM ONLY WORKS ON LINUX MACHINES.
 
@@ -57,11 +57,11 @@ I have developped it on a linux system, it just displays weird errors once i hav
 
 ```
 $>ls
-piscine pool_Destroyer ...
+piscine	pool_Destroyer	folder0	folder1 ...
 ```
 
 ```
-> piscine folder should be placed in the same folder as "Pool-Destroyer" program.
+> It means that the piscine folder should be placed in the same folder as "Pool-Destroyer" program.
 ```
 
 ---
@@ -75,7 +75,7 @@ $>./grademe.sh
 ```
 ---
 
-## bugs :
+## Bugs :
 
 > Shell00 and Shell01 still got a lot to fix on, so i advice you to relay only on C tests.
 
