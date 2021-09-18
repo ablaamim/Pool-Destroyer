@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Fri Sep 17 18:22:16 +01 2021
+Sat Sep 18 19:45:26 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,130 +11,96 @@ ablaamim
 
 Ready for testing
 
-LOADING c00:
+LOADING shell00:
 
 = ex00 =
 ==========================================
-
-Norme: ./src/c00/ex00/ft_putchar.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex00/main.c ./src/c00/ex00/ft_putchar.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex00
 
 diff ok :D
 
 = ex01 =
 ==========================================
-
-Norme: ./src/c00/ex01/ft_print_alphabet.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex01/main.c ./src/c00/ex01/ft_print_alphabet.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex01
-
-diff ok :D
+$>Extracting archive...
+Done.
+total 44
+-rwxr-xr-x 1 root root  2264 Sep 18 19:45 ex01.sh
+-rw-r--r-- 1 root root  1174 Sep 18 19:45 ex01_shell00_tester.sh
+-rw-r--r-- 1 root root    22 Sep 18 19:45 output
+-rw-r--r-- 1 root root    22 Sep 18 19:45 raw
+-rw-r--r-- 1 root root  2632 Sep 18 19:45 readme.md
+-r--r-xr-x 1 root root 10240 Sep 18 16:14 testShell00
+-rwxr-xr-x 1 root root 20480 Sep 18 19:45 testShell00.tar
+diff ko :(
 
 = ex02 =
 ==========================================
+$>Extracting archive...
+Done.
 
-Norme: ./src/c00/ex02/ft_print_reverse_alphabet.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex02/main.c ./src/c00/ex02/ft_print_reverse_alphabet.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex02
+test0
+total 0
+-r-----r-- 1 root root 1 Sep 18 19:45 test3
+diff ko :(
 
-diff ok :D
+test1
+-rwx--xr-- 1 root root 4 Jun  2 10:46 src/shell00/ex02/test1
+diff ko :(
+
+test2
+total 0
+diff ko :(
+
+test3
+-r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test3
+diff ko :(
+
+test4
+-rw-r----x 1 root root 2 Jun  1 23:43 src/shell00/ex02/test4
+diff ko :(
+
+test5
+-r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test5
+diff ko :(
+
+test6
+lrwxrwxrwx 1 root root 5 Jun  1 23:44 src/shell00/ex02/test6 -> test0
+diff ko :(
 
 = ex03 =
 ==========================================
-
-Norme: ./src/c00/ex03/ft_print_numbers.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex03/main.c ./src/c00/ex03/ft_print_numbers.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex03
-
 diff ok :D
 
 = ex04 =
 ==========================================
 
-Norme: ./src/c00/ex04/ft_is_negative.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex04/main.c ./src/c00/ex04/ft_is_negative.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex04
-> test 0 with n=42
-diff ok :D
-
-> test 1 with n=2147483646
-diff ok :D
-
-> test 2 with n=1337
-diff ok :D
-
-> test 3 with n=-42
-diff ok :D
-
-> test 4 with n=-2147483647
-diff ok :D
-
-> test 5 with n=-1337
-diff ok :D
-
-> test 6 with n=6473287
-diff ok :D
-
-> test 7 with n=-328
-diff ok :D
-
-> test 8 with n=612567
 diff ok :D
 
 = ex05 =
 ==========================================
-
-Norme: ./src/c00/ex05/ft_print_comb.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex05/main.c ./src/c00/ex05/ft_print_comb.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex05
 
 diff ok :D
 
 = ex06 =
 ==========================================
 
-Norme: ./src/c00/ex06/ft_print_comb2.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex06/main.c ./src/c00/ex06/ft_print_comb2.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex06
-
 diff ok :D
 
 = ex07 =
 ==========================================
 
-Norme: ./src/c00/ex07/ft_putnbr.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex07/main.c ./src/c00/ex07/ft_putnbr.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex07
-> test 0 with nb=42
-diff ok :D
-
-> test 1 with nb=2147483647
-diff ok :D
-
-> test 2 with nb=1337
-diff ok :D
-
-> test 3 with nb=-42
-diff ok :D
-
-> test 4 with nb=-2147483647
-diff ok :D
-
-> test 5 with nb=-1337
-diff ok :D
-
-> test 6 with nb=6473287
-diff ok :D
-
-> test 7 with nb=-328
-diff ok :D
-
-> test 8 with nb=612567
 diff ok :D
 
 = ex08 =
 ==========================================
 
-Norme: ./src/c00/ex08/ft_print_combn.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex08/main.c ./src/c00/ex08/ft_print_combn.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex08
-> test 1
+diff ok :D
 
-diff ko :(
+= ex09 =
+==========================================
+
+diff ok :D
 
 
-Every act of creation is a first act of destruction.
+All shell00 tests are done.
 
 Its either your code survives or it gets wrecked.

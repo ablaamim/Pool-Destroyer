@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:05:05 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/17 18:05:04 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/09/18 19:45:21 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,6 +99,7 @@ function	check_sh00_ex02()
 	fi
 
 # Check test1
+
 printf "\ntest1\n" >> DEEPTHOUGHT
 FILESIZE=$(wc -c src/shell00/ex02/test1 | sed -e 's/\ src\/shell00\/ex02\/test1//g')
 if ls -l src/shell00/ex02/test1 | sed -e 's/ //g' | grep -e "-rwx--xr--1" | grep -E "20[0-9]{2}" | grep -e "test1" > /dev/null && [ $FILESIZE -eq 4 ] ; then
@@ -111,6 +112,7 @@ else
 fi
 
 # Check test2
+
 printf "\ntest2\n" >> DEEPTHOUGHT
 if ls -l src/shell00/ex02/ | sed -e 's/ //g' | grep -e "dr-x---r--2" | grep -E "20[0-9]{2}" | grep -e "test2" > /dev/null ; then
 	printf "${uni_success}ex02/test2\t\t\t${diff_ok}${NOCOLOR}\n"
@@ -122,6 +124,7 @@ else
 fi
 
 # Check test3
+
 printf "\ntest3\n" >> DEEPTHOUGHT
 FILESIZE=$(wc -c src/shell00/ex02/test3 | sed -e 's/\ src\/shell00\/ex02\/test3//g')
 if ls -l src/shell00/ex02/test3 | sed -e 's/ //g' | grep -e "-r-----r--2" | grep -E "20[0-9]{2}" | grep -e "test3" > /dev/null && [ $FILESIZE -eq 1 ] ; then
@@ -134,6 +137,7 @@ else
 fi
 
 # Check test4
+
 printf "\ntest4\n" >> DEEPTHOUGHT
 FILESIZE=$(wc -c src/shell00/ex02/test4 | sed -e 's/\ src\/shell00\/ex02\/test4//g')
 if ls -l src/shell00/ex02/test4 | sed -e 's/ //g' | grep -e "-rw-r----x1" | grep -E "20[0-9]{2}" | grep -e "test4" > /dev/null && [ $FILESIZE -eq 2 ] ; then
@@ -146,6 +150,7 @@ else
 fi
 
 # Check test5
+
 printf "\ntest5\n" >> DEEPTHOUGHT
 FILESIZE=$(wc -c src/shell00/ex02/test5 | sed -e 's/\ src\/shell00\/ex02\/test5//g')
 if ls -l src/shell00/ex02/test5 | sed -e 's/ //g' | grep -e "-r-----r--2" | grep -E "20[0-9]{2}" | grep -e "test5" > /dev/null && [ $FILESIZE -eq 1 ] ; then
@@ -158,6 +163,7 @@ else
 fi
 
 # Check test6
+
 printf "\ntest6\n" >> DEEPTHOUGHT
 if ls -l src/shell00/ex02/test6 | sed -e 's/ //g' | grep -e "lrwxr-xr-x1" | grep -E "20[0-9]{2}" | grep -e "test6" | grep -e "test0" > /dev/null ; then
 	printf "${uni_success}ex02/test6\t\t\t${diff_ok}${NOCOLOR}\n"
@@ -168,6 +174,8 @@ else
 	printf "diff ko :(\n" >> DEEPTHOUGHT
 fi
 }
+
+#check ex03
 
 function	check_sh00_ex03()
 {
@@ -183,15 +191,12 @@ function	check_sh00_ex03()
 	fi
 	# grep commands
 	DIFF_LINE_ONE=$(grep -m 1 -E '^Credentials cache: API:[0-9A-Z]{8}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{12}$' src/shell00/ex03/klist.txt)
-	DIFF_LINE_TWO=$(head -2 src/shell00/ex03/klist.txt | tail -1 | grep -E "^ {8}Principal: $USER_NAME@42.FR$")
+	DIFF_LINE_TWO=$(head -2 src/shell00/ex03/klist.txt | tail -1 | grep -E "$USER_NAME@student.1337.ma$")
 	DIFF_LINE_THREE=$(head -3 src/shell00/ex03/klist.txt | tail -1 | grep -E "^$")
 	DIFF_LINE_FOUR=$(head -4 src/shell00/ex03/klist.txt | tail -1 | grep -E "^  Issued {16}Expires {15}Principal$")
 	DIFF_LINE_FIVE=$(head -5 src/shell00/ex03/klist.txt | tail -1 | grep -E "^[A-Z][a-z]{2} {1,2}[0-9]{1,2} [0-9]{2}:[0-9]{2}:[0-9]{2} [0-9]{4}  [A-Z][a-z]{2} {1,2}[0-9]{1,2} [0-9]{2}:[0-9]{2}:[0-9]{2} [0-9]{4}  krbtgt/42.FR@42.FR")
-	DIFF_LINE_SIX=$(head -6 src/shell00/ex03/klist.txt | tail -1 | grep -E "^[A-Z][a-z]{2} {1,2}[0-9]{1,2} [0-9]{2}:[0-9]{2}:[0-9]{2} [0-9]{4}  [A-Z][a-z]{2} {1,2}[0-9]{1,2} [0-9]{2}:[0-9]{2}:[0-9]{2} [0-9]{4}  HTTP/student-storage-2.42.fr@42.FR")
 
-# echo "1" $DIFF_LINE_ONE "2" $DIFF_LINE_TWO "3"$DIFF_LINE_THREE "4" $DIFF_LINE_FOUR "5" $DIFF_LINE_FIVE "6" $DIFF_LINE_SIX 
-
-if [ "$DIFF_LINE_ONE" != "" ] && [ "$DIFF_LINE_TWO" != "" ] && [ "$DIFF_LINE_THREE" == "" ] && [ "$DIFF_LINE_FOUR" != "" ] && [ "$DIFF_LINE_FIVE" != "" ] && [ "$DIFF_LINE_SIX" != "" ] ; then
+	if [ "$DIFF_LINE_ONE" != "" ] && [ "$DIFF_LINE_TWO" != "" ] && [ "$DIFF_LINE_THREE" == "" ] && [ "$DIFF_LINE_FOUR" != "" ] && [ "$DIFF_LINE_FIVE" != "" ] ; then
 	printf "${uni_success}ex03/klist.txt\t\t${diff_ok}${NOCOLOR}\n"
 	printf "diff ok :D\n" >> DEEPTHOUGHT
 else
@@ -199,6 +204,8 @@ else
 	printf "\ndiff ko :(\n" >> DEEPTHOUGHT
 fi	
 }
+
+#check ex04
 
 function	check_sh00_ex04()
 {
