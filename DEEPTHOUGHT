@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Sun Sep 19 11:37:52 +01 2021
+Sun Sep 19 23:45:42 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,5 +11,3 @@ ablaamim
 
 Ready for testing
 
-
-Its either your code survives or it gets wrecked.
