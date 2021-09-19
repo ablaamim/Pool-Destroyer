@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:27:46 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/26 21:41:49 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/19 11:41:39 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,14 +16,14 @@ function	choices()
 {
 printf "${YELLOW}========================================================================================================================
 
-	<< CHOOSE WHAT YOU WOULD LIKE TO DESTROY : >>
+	<< CHOOSE WHAT YOU WOULD LIKE TO DESTROY ! >>
 
-	SELECT [0][SELECT ALL]  ULTIMATE KILL;
+	SELECT [0]  [SELECT ALL]  ULTIMATE KILL;
 
 	SELECT [1]  KILL shell00;
 	SELECT [2]  KILL shell01;
 
-	<< SELECT FROM C PROJECTS : >>
+	<< SELECT FROM C PROJECTS ! >>
 
 	[00] KILL c00;
 	[01] KILL c01;
@@ -40,9 +40,11 @@ printf "${YELLOW}===============================================================
 	[12] KILL c12;
 	[13] KILL c13;
 
+	EXAMPLE : To test c00 you must enter the value 00 without "[]" and so on.
+
 ==========================================================================================================================
 
-\n${NOCOLOR}Select your kill (-all == 0): "
+\n${NOCOLOR}Select your kill from above : "
 	read
 		if [ "$REPLY" == "0" ] || [ "$REPLY" == "" ]; then
 			run_all

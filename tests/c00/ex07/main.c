@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../header/user_functions.h"
+#include <stdlib.h>
 
 int		main(int ac, char **av)
 {
