@@ -87,7 +87,7 @@ $>./grademe.sh
 
 </p>
 <p align="center">
-<img src="https://github.com/alaamimi/Pool-Detroyer/blob/master/img/destruction%20v2.0.JPG" width="800">
+<img src="https://github.com/ablaamim/Pool-Destroyer/blob/master/img/DESTRUCTION%20FINAL.JPG" width="800">
 </p>
 
 ---
