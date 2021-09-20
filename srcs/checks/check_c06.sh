@@ -6,13 +6,14 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 19:03:34 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/17 18:12:32 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/09/20 07:04:10 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-function	check_c06_ex00() {
+function	check_c06_ex00()
+{
 	usr_out=$current_dir/user_output/c06/ex00
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
@@ -44,7 +45,8 @@ function	check_c06_ex00() {
 	cd $current_dir
 }
 
-function	check_c06_ex01() {
+function	check_c06_ex01()
+{
 	usr_out=$current_dir/user_output/c06/ex01
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex01:\n${NOCOLOR}"
@@ -77,7 +79,8 @@ function	check_c06_ex01() {
 	cd $current_dir
 }
 
-function	check_c06_ex02() {
+function	check_c06_ex02()
+{
 	usr_out=$current_dir/user_output/c06/ex02
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex02:\n${NOCOLOR}"
@@ -110,7 +113,8 @@ function	check_c06_ex02() {
 	cd $current_dir
 }
 
-function	check_c06_ex03() {
+function	check_c06_ex03()
+{
 	usr_out=$current_dir/user_output/c06/ex03
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex03:\n${NOCOLOR}"
@@ -143,7 +147,8 @@ function	check_c06_ex03() {
 	cd $current_dir
 }
 
-function	c06() {
+function	c06()
+{
 	mkdir src/c06 user_output/c06
 	print_current_part "c06"
 	cp -r $src_path/c06/ex* ./src/c06  # copying src files

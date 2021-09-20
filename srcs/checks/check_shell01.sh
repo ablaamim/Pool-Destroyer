@@ -6,11 +6,13 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:07:30 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/17 18:12:48 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/09/20 07:02:28 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
+
+#check ex01
 
 function	check_sh01_ex01()
 {
@@ -37,6 +39,8 @@ function	check_sh01_ex01()
 	fi
 	cd $current_dir
 }
+
+#check ex02
 
 function	check_sh01_ex02()
 {
@@ -65,6 +69,8 @@ function	check_sh01_ex02()
 	cd $current_dir
 }
 
+#check ex03
+
 function	check_sh01_ex03()
 {
 	printf " ${YELLOW}${UNDERLINE}ex03:\n${NOCOLOR}"
@@ -92,6 +98,8 @@ function	check_sh01_ex03()
 	fi
 	cd $current_dir
 }
+
+#check ex04
 
 function	check_sh01_ex04()
 {
@@ -133,6 +141,8 @@ function	check_sh01_ex04()
 	printf "Note: this might not work on linux.\n"
 }
 
+#check ex05
+
 function	check_sh01_ex05()
 {
 	printf " ${YELLOW}${UNDERLINE}ex05:\n${NOCOLOR}"
@@ -151,6 +161,8 @@ function	check_sh01_ex05()
 		printf "\ndiff ok :D\n" >> $current_dir/DEEPTHOUGHT
 	fi
 }
+
+#check ex06
 
 function	check_sh01_ex06()
 {
@@ -178,6 +190,8 @@ function	check_sh01_ex06()
 	fi
 }
 
+#check ex07
+
 function	check_sh01_ex07()
 {
 	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
@@ -186,14 +200,18 @@ function	check_sh01_ex07()
 	printf "\nThis exercise is not supported yet.\n" >> DEEPTHOUGHT	
 }
 
-function	check_sh01_ex08() {
+#check ex08
+
+function	check_sh01_ex08()
+{
 	printf " ${YELLOW}${UNDERLINE}ex08:\n${NOCOLOR}"
 	printf "\n= ex08 =\n==========================================\n" >> DEEPTHOUGHT
 	printf "${RED}This exercise is not supported yet.${NOCOLOR}\n"	
 	printf "\nThis exercise is not supported yet.\n\n" >> DEEPTHOUGHT	
 }
 
-function	shell01() {
+function	shell01()
+{
 	mkdir src/shell01 user_output/shell01 
 	print_current_part "shell01"
 	cp -r $src_path/shell01/ex* ./src/shell01  # copying src files

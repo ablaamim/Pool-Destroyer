@@ -1,6 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    check_c05.sh                                       :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ablaamim <ablaamim@student.1337.ma>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/09/20 07:04:35 by ablaamim          #+#    #+#              #
+#    Updated: 2021/09/20 07:06:09 by ablaamim         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 #!/bin/bash
 
-function	check_c05_ex00() {
+function	check_c05_ex00()
+{
 	usr_out=$current_dir/user_output/c05/ex00
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex00:\n${NOCOLOR}"
@@ -56,7 +69,8 @@ function	check_c05_ex00() {
 	cd $current_dir
 }
 
-function	check_c05_ex01() {
+function	check_c05_ex01()
+{
 	usr_out=$current_dir/user_output/c05/ex01
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex01:\n${NOCOLOR}"
@@ -112,7 +126,8 @@ function	check_c05_ex01() {
 	cd $current_dir
 }
 
-function	check_c05_ex02() {
+function	check_c05_ex02()
+{
 	usr_out=$current_dir/user_output/c05/ex02
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex02:\n${NOCOLOR}"
@@ -165,7 +180,8 @@ function	check_c05_ex02() {
 	cd $current_dir
 }
 
-function	check_c05_ex03() {
+function	check_c05_ex03()
+{
 	usr_out=$current_dir/user_output/c05/ex03
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex03:\n${NOCOLOR}"
@@ -218,7 +234,8 @@ function	check_c05_ex03() {
 	cd $current_dir
 }
 
-function	check_c05_ex04() {
+function	check_c05_ex04()
+{
 	usr_out=$current_dir/user_output/c05/ex04
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex04:\n${NOCOLOR}"
@@ -271,7 +288,8 @@ function	check_c05_ex04() {
 	cd $current_dir
 }
 
-function	check_c05_ex05() {
+function	check_c05_ex05()
+{
 	usr_out=$current_dir/user_output/c05/ex05
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex05:\n${NOCOLOR}"
@@ -311,7 +329,8 @@ function	check_c05_ex05() {
 	cd $current_dir
 }
 
-function	check_c05_ex06() {
+function	check_c05_ex06()
+{
 	usr_out=$current_dir/user_output/c05/ex06
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex06:\n${NOCOLOR}"
@@ -351,7 +370,8 @@ function	check_c05_ex06() {
 	cd $current_dir
 }
 
-function	check_c05_ex07() {
+function	check_c05_ex07()
+{
 	usr_out=$current_dir/user_output/c05/ex07
 	mkdir $usr_out
 	printf " ${YELLOW}${UNDERLINE}ex07:\n${NOCOLOR}"
@@ -391,7 +411,8 @@ function	check_c05_ex07() {
 	cd $current_dir
 }
 
-function	check_c05_ex08() {
+function	check_c05_ex08()
+{
 	printf " ${YELLOW}${UNDERLINE}ex08:\n${NOCOLOR}"
 	printf "= ex08 =\n==========================================\n" >> DEEPTHOUGHT
 	printf "${RED}This exercise is not supported yet.${NOCOLOR}\n"

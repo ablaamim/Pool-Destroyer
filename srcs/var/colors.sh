@@ -6,13 +6,14 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:36:14 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/07 19:38:48 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/20 07:08:24 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
 # Colors variables
+# RGB
 
 BOLD='\033[1m'
 UNDERLINE='\033[4m'

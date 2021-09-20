@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Sun Sep 19 23:45:42 +01 2021
+Mon Sep 20 07:02:36 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,3 +11,96 @@ ablaamim
 
 Ready for testing
 
+LOADING shell00:
+
+= ex00 =
+==========================================
+
+diff ok :D
+
+= ex01 =
+==========================================
+$>Extracting archive...
+Done.
+total 44
+-rwxr-xr-x 1 root root  2264 Sep 20 07:02 ex01.sh
+-rw-r--r-- 1 root root  1174 Sep 20 07:02 ex01_shell00_tester.sh
+-rw-r--r-- 1 root root    22 Sep 20 07:02 output
+-rw-r--r-- 1 root root    22 Sep 20 07:02 raw
+-rw-r--r-- 1 root root  2632 Sep 20 07:02 readme.md
+-r--r-xr-x 1 root root 10240 Sep 18 16:14 testShell00
+-rwxr-xr-x 1 root root 20480 Sep 20 07:02 testShell00.tar
+diff ko :(
+
+= ex02 =
+==========================================
+$>Extracting archive...
+Done.
+
+test0
+total 0
+-r-----r-- 1 root root 1 Sep 20 07:02 test3
+diff ko :(
+
+test1
+-rwx--xr-- 1 root root 4 Jun  2 10:46 src/shell00/ex02/test1
+diff ko :(
+
+test2
+total 0
+diff ko :(
+
+test3
+-r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test3
+diff ko :(
+
+test4
+-rw-r----x 1 root root 2 Jun  1 23:43 src/shell00/ex02/test4
+diff ko :(
+
+test5
+-r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test5
+diff ko :(
+
+test6
+lrwxrwxrwx 1 root root 5 Jun  1 23:44 src/shell00/ex02/test6 -> test0
+diff ko :(
+
+= ex03 =
+==========================================
+diff ok :D
+
+= ex04 =
+==========================================
+
+diff ok :D
+
+= ex05 =
+==========================================
+
+diff ok :D
+
+= ex06 =
+==========================================
+
+diff ok :D
+
+= ex07 =
+==========================================
+
+diff ok :D
+
+= ex08 =
+==========================================
+
+diff ok :D
+
+= ex09 =
+==========================================
+
+diff ok :D
+
+
+All shell00 tests are done.
+
+Its either your code survives or it gets wrecked.
