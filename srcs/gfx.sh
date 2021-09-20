@@ -6,11 +6,12 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:43:26 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/19 11:38:31 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/09/20 07:14:58 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
+#Program header
 
 function	print_welcome()
 {

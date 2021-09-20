@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 18:00:52 by alaamimi          #+#    #+#              #
-#    Updated: 2021/08/01 19:54:44 by alaamimi         ###   ########.fr        #
+#    Updated: 2021/09/20 07:14:27 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,8 @@ function	clean_before_launch()
 
 function	ask_username()
 {
-	if [ "$USER_NAME" == "alaamimi" ] ; then
-		printf "Welcome, alaamimi!\n\n"
+	if [ "$USER_NAME" == "ablaamim" ] ; then
+		printf "Welcome, ablaamim!\n\n"
 		return
 	fi
 	printf "Are you $USER_NAME ? [Y/n] "

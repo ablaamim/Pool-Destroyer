@@ -6,7 +6,7 @@
 #    By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/21 17:27:46 by alaamimi          #+#    #+#              #
-#    Updated: 2021/09/20 06:58:53 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/09/20 07:19:37 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,18 @@ printf "${YELLOW}===============================================================
 			c06
 		elif [ "$REPLY" == "07" ]; then
 			c07
+		elif [ "$REPLY" == "08" ]; then
+			c08
+		elif [ "$REPLY" == "09" ]; then
+			c09
+		elif [ "$REPLY" == "10" ]; then
+			c10
+		elif [ "$REPLY" == "11" ]; then
+			c11
+		elif [ "$REPLY" == "12" ]; then
+			c12
+		elif [ "$REPLY" == "13" ]; then
+			c13
 		else
 			printf "${RED}Ultimate test is loading.\n${NOCOLOR}"
 	fi
