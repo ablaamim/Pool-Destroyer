@@ -2,7 +2,7 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Mon Sep 20 07:19:50 +01 2021
+Mon Sep 27 07:27:33 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
@@ -11,392 +11,6 @@ ablaamim
 
 Ready for testing
 
-LOADING shell00:
-
-= ex00 =
-==========================================
-
-diff ok :D
-
-= ex01 =
-==========================================
-$>Extracting archive...
-Done.
-total 44
--rwxr-xr-x 1 root root  2264 Sep 20 07:19 ex01.sh
--rw-r--r-- 1 root root  1174 Sep 20 07:19 ex01_shell00_tester.sh
--rw-r--r-- 1 root root    22 Sep 20 07:19 output
--rw-r--r-- 1 root root    22 Sep 20 07:19 raw
--rw-r--r-- 1 root root  2632 Sep 20 07:19 readme.md
--r--r-xr-x 1 root root 10240 Sep 18 16:14 testShell00
--rwxr-xr-x 1 root root 20480 Sep 20 07:19 testShell00.tar
-diff ko :(
-
-= ex02 =
-==========================================
-$>Extracting archive...
-Done.
-
-test0
-total 0
--r-----r-- 1 root root 1 Sep 20 07:19 test3
-diff ko :(
-
-test1
--rwx--xr-- 1 root root 4 Jun  2 10:46 src/shell00/ex02/test1
-diff ko :(
-
-test2
-total 0
-diff ko :(
-
-test3
--r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test3
-diff ko :(
-
-test4
--rw-r----x 1 root root 2 Jun  1 23:43 src/shell00/ex02/test4
-diff ko :(
-
-test5
--r-----r-- 2 root root 1 Jun  1 23:44 src/shell00/ex02/test5
-diff ko :(
-
-test6
-lrwxrwxrwx 1 root root 5 Jun  1 23:44 src/shell00/ex02/test6 -> test0
-diff ko :(
-
-= ex03 =
-==========================================
-diff ok :D
-
-= ex04 =
-==========================================
-
-diff ok :D
-
-= ex05 =
-==========================================
-
-diff ok :D
-
-= ex06 =
-==========================================
-
-diff ok :D
-
-= ex07 =
-==========================================
-
-diff ok :D
-
-= ex08 =
-==========================================
-
-diff ok :D
-
-= ex09 =
-==========================================
-
-diff ok :D
-
-
-All shell00 tests are done.
-LOADING shell01:
-
-
-= ex01 =
-==========================================
-$>src/shell01/ex01/print_groups.sh is missing. Skipping...
-
-
-= ex02 =
-==========================================
-$>src/shell01/ex02/find_sh.sh is missing. Skipping...
-
-
-= ex03 =
-==========================================
-$>src/shell01/ex03/count_files.sh is missing. Skipping...
-
-
-= ex04 =
-==========================================
-$>src/shell01/ex04/MAC.sh is missing. Skipping...
-
-
-= ex05 =
-==========================================
-$>src/shell01/ex05/"?$*'MaRViN'*$?" is missing. Skipping...
-
-
-= ex06 =
-==========================================
-$>src/shell01/ex06/skip.sh is missing. Skipping...
-
-
-= ex07 =
-==========================================
-
-This exercise is not supported yet.
-
-= ex08 =
-==========================================
-
-This exercise is not supported yet.
-
-
-
-All shell01 tests are done.
-LOADING c00:
-
-= ex00 =
-==========================================
-
-Norme: ./src/c00/ex00/ft_putchar.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex00/main.c ./src/c00/ex00/ft_putchar.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex00
-
-diff ok :D
-
-= ex01 =
-==========================================
-
-Norme: ./src/c00/ex01/ft_print_alphabet.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex01/main.c ./src/c00/ex01/ft_print_alphabet.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex01
-
-diff ok :D
-
-= ex02 =
-==========================================
-
-Norme: ./src/c00/ex02/ft_print_reverse_alphabet.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex02/main.c ./src/c00/ex02/ft_print_reverse_alphabet.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex02
-
-diff ok :D
-
-= ex03 =
-==========================================
-
-Norme: ./src/c00/ex03/ft_print_numbers.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex03/main.c ./src/c00/ex03/ft_print_numbers.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex03
-
-diff ok :D
-
-= ex04 =
-==========================================
-
-Norme: ./src/c00/ex04/ft_is_negative.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex04/main.c ./src/c00/ex04/ft_is_negative.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex04
-> test 0 with n=42
-diff ok :D
-
-> test 1 with n=2147483646
-diff ok :D
-
-> test 2 with n=1337
-diff ok :D
-
-> test 3 with n=-42
-diff ok :D
-
-> test 4 with n=-2147483647
-diff ok :D
-
-> test 5 with n=-1337
-diff ok :D
-
-> test 6 with n=6473287
-diff ok :D
-
-> test 7 with n=-328
-diff ok :D
-
-> test 8 with n=612567
-diff ok :D
-
-= ex05 =
-==========================================
-
-Norme: ./src/c00/ex05/ft_print_comb.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex05/main.c ./src/c00/ex05/ft_print_comb.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex05
-
-diff ok :D
-
-= ex06 =
-==========================================
-
-Norme: ./src/c00/ex06/ft_print_comb2.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex06/main.c ./src/c00/ex06/ft_print_comb2.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex06
-
-diff ok :D
-
-= ex07 =
-==========================================
-
-Norme: ./src/c00/ex07/ft_putnbr.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c00/ex07/main.c ./src/c00/ex07/ft_putnbr.c -o /home/vlad/Pool-Destroyer/user_output/c00/ex07
-> test 0 with nb=42
-diff ok :D
-
-> test 1 with nb=2147483647
-diff ok :D
-
-> test 2 with nb=1337
-diff ok :D
-
-> test 3 with nb=-42
-diff ok :D
-
-> test 4 with nb=-2147483647
-diff ok :D
-
-> test 5 with nb=-1337
-diff ok :D
-
-> test 6 with nb=6473287
-diff ok :D
-
-> test 7 with nb=-328
-diff ok :D
-
-> test 8 with nb=612567
-diff ok :D
-
-= ex08 =
-==========================================
-
-Norme: ./src/c00/ex08/ft_print_combn.c: KO
-
-Every act of creation is a first act of destruction.
-LOADING c01:
-
-= ex00 =
-==========================================
-
-Norme: ./src/c01/ex00/ft_ft.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex00/main.c ./src/c01/ex00/ft_ft.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex00
-
-diff ok :D
-
-= ex01 =
-==========================================
-
-Norme: ./src/c01/ex01/ft_ultimate_ft.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex01/main.c ./src/c01/ex01/ft_ultimate_ft.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex01
-
-diff ok :D
-
-= ex02 =
-==========================================
-
-Norme: ./src/c01/ex02/ft_swap.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex02/main.c ./src/c01/ex02/ft_swap.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex02
-
-diff ok :D
-
-= ex03 =
-==========================================
-
-Norme: ./src/c01/ex03/ft_div_mod.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex03/main.c ./src/c01/ex03/ft_div_mod.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex03
-> test 0 with a=42 and b=13
-diff ok :D
-
-> test 1 with a=1337 and b=64
-diff ok :D
-
-> test 2 with a=97 and b=-42
-diff ok :D
-
-> test 3 with a=-2147483648 and b=-1337
-diff ok :D
-
-> test 4 with a=2147483647 and b=-4
-diff ok :D
-
-> test 5 with a=6473287 and b=-328
-diff ok :D
-
-> test 6 with a=612567 and b=106
-diff ok :D
-
-= ex04 =
-==========================================
-
-Norme: ./src/c01/ex04/ft_ultimate_div_mod.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex04/main.c ./src/c01/ex04/ft_ultimate_div_mod.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex04
-> test 0 with a=42 and b=13
-diff ok :D
-
-> test 1 with a=1337 and b=64
-diff ok :D
-
-> test 2 with a=97 and b=-42
-diff ok :D
-
-> test 3 with a=-2147483648 and b=-1337
-diff ok :D
-
-> test 4 with a=2147483647 and b=-4
-diff ok :D
-
-> test 5 with a=6473287 and b=-328
-diff ok :D
-
-> test 6 with a=612567 and b=106
-diff ok :D
-
-= ex05 =
-==========================================
-
-Norme: ./src/c01/ex05/ft_putstr.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex05/main.c ./src/c01/ex05/ft_putstr.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex05
-
-diff ok :D
-
-= ex06 =
-==========================================
-
-Norme: ./src/c01/ex06/ft_strlen.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex06/main.c ./src/c01/ex06/ft_strlen.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex06
-> test 1
-diff ok :D
-
-> test 2
-diff ok :D
-
-> test 3
-diff ok :D
-
-> test 4
-diff ok :D
-
-> test 5
-diff ok :D
-
-> test 6
-diff ok :D
-
-> test 7
-diff ok :D
-
-> test 8
-diff ok :D
-
-= ex07 =
-==========================================
-
-Norme: ./src/c01/ex07/ft_rev_int_tab.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c01/ex07/main.c ./src/c01/ex07/ft_rev_int_tab.c -o /home/vlad/Pool-Destroyer/user_output/c01/ex07
-diff ok :D
-
-= ex08 =
-==========================================
-$>src/c01/ex08/ft_sort_int_tab.c is missing. Skipping...
-
-
-
-All c01 tests are done.
 LOADING c02:
 
 = ex00 =
@@ -417,11 +31,63 @@ diff ok :D
 
 = ex02 =
 ==========================================
-$>src/c02/ex02/ft_str_is_alpha.c is missing. Skipping...
+
+Norme: ./src/c02/ex02/ft_str_is_alpha.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c02/ex02/main.c ./src/c02/ex02/ft_str_is_alpha.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex02
+> test 1
+diff ok :D
+
+> test 2
+diff ok :D
+
+> test 3
+diff ok :D
+
+> test 4
+1c1
+< 0
+---
+> 
+
+diff ko :(
+
+> test 5
+1c1
+< 1
+---
+> 
+
+diff ko :(
 
 = ex03 =
 ==========================================
-$>src/c02/ex03/ft_str_is_numeric.c is missing. Skipping...
+
+Norme: ./src/c02/ex03/ft_str_is_numeric.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c02/ex03/main.c ./src/c02/ex03/ft_str_is_numeric.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex03
+> test 1
+diff ok :D
+
+> test 2
+diff ok :D
+
+> test 3
+diff ok :D
+
+> test 4
+1c1
+< 0
+---
+> 
+
+diff ko :(
+
+> test 5
+1c1
+< 1
+---
+> 
+
+diff ko :(
 
 = ex04 =
 ==========================================
@@ -463,137 +129,5 @@ This exercise is not supported yet.
 
 
 All c02 tests are done.
-LOADING c03:
-
-= ex00 =
-==========================================
-$>src/c03/ex00/ft_strcmp.c is missing. Skipping...
-
-= ex01 =
-==========================================
-$>src/c03/ex01/ft_strncmp.c is missing. Skipping...
-
-= ex02 =
-==========================================
-$>src/c03/ex02/ft_strcat.c is missing. Skipping...
-
-= ex03 =
-==========================================
-$>src/c03/ex03/ft_strncat.c is missing. Skipping...
-
-= ex04 =
-==========================================
-$>src/c03/ex04/ft_strstr.c is missing. Skipping...
-
-= ex05 =
-==========================================
-$>src/c03/ex05/ft_strlcat.c is missing. Skipping...
-
-
-
-All c03 tests are done.
-LOADING c04:
-
-= ex00 =
-==========================================
-$>src/c04/ex00/ft_strlen.c is missing. Skipping...
-
-= ex01 =
-==========================================
-$>src/c04/ex01/ft_putstr.c is missing. Skipping...
-
-= ex02 =
-==========================================
-$>src/c04/ex02/ft_putnbr.c is missing. Skipping...
-
-= ex03 =
-==========================================
-$>src/c04/ex03/ft_atoi.c is missing. Skipping...
-
-= ex04 =
-==========================================
-
-This exercise is not supported yet.
-
-= ex05 =
-==========================================
-
-This exercise is not supported yet.
-
-
-
-All c04 tests are done.
-LOADING c05:
-
-= ex00 =
-==========================================
-$>src/c05/ex00/ft_iterative_factorial.c is missing. Skipping...
-
-= ex01 =
-==========================================
-$>src/c05/ex01/ft_recursive_factorial.c is missing. Skipping...
-
-= ex02 =
-==========================================
-$>src/c05/ex02/ft_iterative_power.c is missing. Skipping...
-
-= ex03 =
-==========================================
-$>src/c05/ex03/ft_recursive_power.c is missing. Skipping...
-
-= ex04 =
-==========================================
-$>src/c05/ex04/ft_fibonacci.c is missing. Skipping...
-
-= ex05 =
-==========================================
-$>src/c05/ex05/ft_sqrt.c is missing. Skipping...
-
-= ex06 =
-==========================================
-$>src/c05/ex06/ft_is_prime.c is missing. Skipping...
-
-= ex07 =
-==========================================
-$>src/c05/ex07/ft_find_next_prime.c is missing. Skipping...
-
-= ex08 =
-==========================================
-
-This exercise is not supported yet.
-
-
-
-All c05 tests are done.
-LOADING c06:
-
-= ex00 =
-==========================================
-$>src/c06/ex00/ft_print_program_name.c is missing. Skipping...
-
-= ex01 =
-==========================================
-$>src/c06/ex01/ft_print_params.c is missing. Skipping...
-
-= ex02 =
-==========================================
-$>src/c06/ex02/ft_rev_params.c is missing. Skipping...
-
-= ex03 =
-==========================================
-$>src/c06/ex03/ft_sort_params.c is missing. Skipping...
-
-
-
-All c06 tests are done.
-LOADING c07:
-
-= ex00 =
-==========================================
-
-Norme: ./src/c07/ex00/ft_strdup.c: KO
-
-
-All c07 tests are done.
 
 Its either your code survives or it gets wrecked.
