@@ -16,11 +16,7 @@ function	check_norme() {
 	if [ ! -e $norme_out ] ; then
 		mkdir $norme_out
 	fi
-	if [ -e ~/.norminette/norminette.rb ]; then 
-	   	ruby ~/.norminette/norminette.rb -R CheckForbiddenSourceHeader $1 > $norme_out/tmp
-	else
-		norminette -R CheckForbiddenSourceHeader $1 > $norme_out/tmp
-	fi
+		python3 -m norminette -R CheckForbiddenSourceHeader $1 > $norme_out/tmp
 	NORME_RES=$(grep -e "Error" -e "Warning" $norme_out/tmp)
 #	echo $NORME $NORME_RES $FILE_NB
 	if [ "$NORME_RES" == "" ] ; then
@@ -30,6 +26,8 @@ function	check_norme() {
 	else
 		printf "${uni_fail} Norme: ./$1\n"
 		printf "\nNorme: ./$1: KO\n" >> $current_dir/DEEPTHOUGHT
+		printf "$NORME_RES\n\n" 
+		printf "$NORME_RES\n\n" >> $current_dir/DEEPTHOUGHT
 		NORME=1
 	fi
 }
