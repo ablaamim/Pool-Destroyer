@@ -2,132 +2,27 @@ $> hostname; uname -msr
 DESKTOP-J0LTABQ
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Mon Sep 27 07:27:33 +01 2021
+Thu Oct  7 14:36:54 +01 2021
 $> gcc --version
 gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
 $> clang --version
 $> echo $USER_NAME
-ablaamim
+root
 
 Ready for testing
 
-LOADING c02:
+LOADING c07:
 
 = ex00 =
 ==========================================
 
-Norme: ./src/c02/ex00/ft_strcpy.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c02/ex00/main.c ./src/c02/ex00/ft_strcpy.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex00
+Norme: ./src/c07/ex00/ft_strdup.c: OK
+$> gcc -Wall -Werror -Wextra ./tests/c07/ex00/main.c ./src/c07/ex00/ft_strdup.c -o /home/vlad/Pool-Destroyer/user_output/c07/ex00
 
 diff ok :D
 
-= ex01 =
-==========================================
-
-Norme: ./src/c02/ex01/ft_strncpy.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c02/ex01/main.c ./src/c02/ex01/ft_strncpy.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex01
-
-diff ok :D
-
-= ex02 =
-==========================================
-
-Norme: ./src/c02/ex02/ft_str_is_alpha.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c02/ex02/main.c ./src/c02/ex02/ft_str_is_alpha.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex02
-> test 1
-diff ok :D
-
-> test 2
-diff ok :D
-
-> test 3
-diff ok :D
-
-> test 4
-1c1
-< 0
----
-> 
-
-diff ko :(
-
-> test 5
-1c1
-< 1
----
-> 
-
-diff ko :(
-
-= ex03 =
-==========================================
-
-Norme: ./src/c02/ex03/ft_str_is_numeric.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c02/ex03/main.c ./src/c02/ex03/ft_str_is_numeric.c -o /home/vlad/Pool-Destroyer/user_output/c02/ex03
-> test 1
-diff ok :D
-
-> test 2
-diff ok :D
-
-> test 3
-diff ok :D
-
-> test 4
-1c1
-< 0
----
-> 
-
-diff ko :(
-
-> test 5
-1c1
-< 1
----
-> 
-
-diff ko :(
-
-= ex04 =
-==========================================
-$>src/c02/ex04/ft_str_is_lowercase.c is missing. Skipping...
-
-= ex05 =
-==========================================
-$>src/c02/ex05/ft_str_is_uppercase.c is missing. Skipping...
-
-= ex06 =
-==========================================
-$>src/c02/ex06/ft_str_is_printable.c is missing. Skipping...
-
-= ex07 =
-==========================================
-$>src/c02/ex07/ft_strupcase.c is missing. Skipping...
-
-= ex08 =
-==========================================
-$>src/c02/ex08/ft_strlowcase.c is missing. Skipping...
-
-= ex09 =
-==========================================
-$>src/c02/ex09/ft_strcapitalize.c is missing. Skipping...
-
-= ex10 =
-==========================================
-$>src/c02/ex10/ft_strlcpy.c is missing. Skipping...
-
-= ex11 =
-==========================================
-$>src/c02/ex11/ft_putstr_non_printable.c is missing. Skipping...
-
-= ex12 =
-==========================================
-
-This exercise is not supported yet.
 
 
-
-All c02 tests are done.
+All c07 tests are done.
 
 Its either your code survives or it gets wrecked.

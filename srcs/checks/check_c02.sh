@@ -6,11 +6,13 @@
 #    By: ablaamim <ablaamim@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/27 07:27:59 by ablaamim          #+#    #+#              #
-#    Updated: 2021/09/27 07:30:26 by ablaamim         ###   ########.fr        #
+#    Updated: 2021/09/27 07:37:09 by ablaamim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
+
+#check ex00
 
 function	check_c02_ex00()
 {
@@ -47,6 +49,8 @@ function	check_c02_ex00()
 	cd $current_dir
 }
 
+#check ex01
+
 function	check_c02_ex01()
 {
 	usr_out=$current_dir/user_output/c02/ex01
@@ -81,6 +85,8 @@ function	check_c02_ex01()
 	fi
 	cd $current_dir
 }
+
+#check ex02
 
 function	check_c02_ex02()
 {

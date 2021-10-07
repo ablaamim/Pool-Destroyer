@@ -1,7 +1,6 @@
 
 
 #include "../../header/user_functions.h"
-#include <bsd/string.h> // linux only
 
 int		main(void)
 {

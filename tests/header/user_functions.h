@@ -6,7 +6,7 @@
 /*   By: alaamimi <alaamimi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 19:20:31 by alaamimi          #+#    #+#             */
-/*   Updated: 2021/08/26 21:54:40 by alaamimi         ###   ########.fr       */
+/*   Updated: 2021/10/07 14:36:46 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,6 @@ int				ft_is_prime(int nb);
 int				ft_find_next_prime(int nb);
 
 //c07
-int				ft_strdup(char *src);
+char			*ft_strdup(char *src);
 
 #endif
