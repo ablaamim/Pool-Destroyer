@@ -1,28 +1,69 @@
 $> hostname; uname -msr
-DESKTOP-J0LTABQ
+DESKTOP-73R286O
 Linux 4.4.0-19041-Microsoft x86_64
 $> date
-Thu Oct  7 14:36:54 +01 2021
+Mon Jun  6 22:17:10 +01 2022
 $> gcc --version
-gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 $> clang --version
 $> echo $USER_NAME
 root
 
 Ready for testing
 
-LOADING c07:
+LOADING shell00:
 
 = ex00 =
 ==========================================
 
-Norme: ./src/c07/ex00/ft_strdup.c: OK
-$> gcc -Wall -Werror -Wextra ./tests/c07/ex00/main.c ./src/c07/ex00/ft_strdup.c -o /home/vlad/Pool-Destroyer/user_output/c07/ex00
+diff ok :D
+
+= ex01 =
+==========================================
+$>src/shell00/ex01/testShell00.tar is missing. Skipping...
+
+
+= ex02 =
+==========================================
+$>src/shell00/ex02/exo2.tar is missing. Skipping...
+
+
+= ex03 =
+==========================================
+$>src/shell00/ex03/klist.txt is missing. Skipping...
+
+
+= ex04 =
+==========================================
 
 diff ok :D
 
+= ex05 =
+==========================================
+$>src/shell00/ex05/git_commit.sh is missing. Skipping...
 
 
-All c07 tests are done.
+= ex06 =
+==========================================
+$>src/shell00/ex06/git_ignore.sh is missing. Skipping...
+
+
+= ex07 =
+==========================================
+$>src/shell00/ex07/b is missing. Skipping...
+
+
+= ex08 =
+==========================================
+$>src/shell00/ex08/clean is missing. Skipping...
+
+
+= ex09 =
+==========================================
+$>src/shell00/ex09/ft_magic is missing. Skipping...
+
+
+
+All shell00 tests are done.
 
 Its either your code survives or it gets wrecked.
